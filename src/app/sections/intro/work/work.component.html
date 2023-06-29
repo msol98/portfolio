@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutAlign="center">
+  <h1>Work and Experience:</h1>
+  <div class="tab-container" fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="50px"
+    fxLayoutAlign.gt-sm="center center" fxLayoutAlign="start center">
+    <div class="tab-btns" fxLayout.gt-sm="column">
+      <button *ngFor="let work of _works" (click)="select(work)" [class.code]="work===selectedWork">
+        {{work.name}}
+      </button>
+    </div>
+    <div class="description" fxFlex *ngIf="selectedWork">
+      <p style="margin-bottom: 20px;">
+        <span class="name">{{selectedWork.name}}</span>
+        <span class="date">{{selectedWork.date}}</span>
+      </p>
+      <p [innerHtml]="selectedWork.description"></p>
+      <!-- <div>
+          <span *ngFor="let tech of technologies">{{tech}}</span>
+        </div> -->
+    </div>
+  </div>
+</div>

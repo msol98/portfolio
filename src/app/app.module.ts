@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './sections/intro/intro.component';
+import { WorkComponent } from './sections/intro/work/work.component';
 import { AboutMeComponent } from './sections/intro/about-me/about-me.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactMeComponent } from './sections/intro/contact-me/contact-me.component';
@@ -11,6 +12,7 @@ import { EducationComponent } from './sections/intro/education/education.compone
   declarations: [
     AppComponent,
     IntroComponent,
+    WorkComponent,
     AboutMeComponent,
     ContactMeComponent,
     EducationComponent
