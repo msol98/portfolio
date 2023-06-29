@@ -5,13 +5,15 @@ import { IntroComponent } from './sections/intro/intro.component';
 import { AboutMeComponent } from './sections/intro/about-me/about-me.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactMeComponent } from './sections/intro/contact-me/contact-me.component';
+import { EducationComponent } from './sections/intro/education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
     AboutMeComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
