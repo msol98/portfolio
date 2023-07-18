@@ -1,0 +1,27 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$primary: mat.define-palette(mat.$green-palette, A200);
+$accent: mat.define-palette(mat.$orange-palette, 700);
+
+$typography: mat.define-typography-config(
+  $font-family: Text,
+
+  $headline: mat.define-typography-level(
+    $font-size: 25px,
+  ),
+  $button: mat.define-typography-level(
+    $font-size: 14px,
+  ),
+);
+
+$theme: mat.define-light-theme((
+  typography: $typography,
+    primary: $primary,
+    accent: $accent,
+  ),
+);
+
+@include mat.core-theme($theme);
+@include mat.all-component-themes($theme);

@@ -7,6 +7,9 @@ import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactMeComponent } from './sections/contact-me/contact-me.component';
 import { EducationComponent } from './sections/education/education.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,14 @@ import { EducationComponent } from './sections/education/education.component';
     WorkComponent,
     AboutMeComponent,
     ContactMeComponent,
-    EducationComponent
+    EducationComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
