@@ -3,4 +3,37 @@
 
 body {
   margin: 0;
+  color: mat-color($white);
+  background-color: mat-color($dark);
+}
+
+a {
+  color: mat-color($primary);
+  text-decoration: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.code {
+  font-family: Code;
+  font-weight: bold;
+  color: mat-color($primary);
+
+  &::before {
+    content: '<'
+  }
+  
+  &::after {
+    content: '>'
+  }
 }

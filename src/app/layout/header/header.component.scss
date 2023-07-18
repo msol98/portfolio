@@ -1,10 +1,21 @@
+@import './../../../assets/stylesheets/theming.scss';
+
+.mat-toolbar {
+  padding: 0 30px;
+  max-width: 1260px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
 .logo {
   font-family: Logo;
   font-size: 30px;
+  color: mat-color($white);
 }
 
 .h-options button {
   background-color: transparent;
+  color: mat-color($white);
   border: none;
   outline: none;
   padding: 0;
