@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './sections/intro/intro.component';
-import { WorkComponent } from './sections/intro/work/work.component';
-import { AboutMeComponent } from './sections/intro/about-me/about-me.component';
+import { WorkComponent } from './sections/work/work.component';
+import { AboutMeComponent } from './sections/about-me/about-me.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ContactMeComponent } from './sections/intro/contact-me/contact-me.component';
-import { EducationComponent } from './sections/intro/education/education.component';
+import { ContactMeComponent } from './sections/contact-me/contact-me.component';
+import { EducationComponent } from './sections/education/education.component';
 
 @NgModule({
   declarations: [
