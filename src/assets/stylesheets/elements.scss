@@ -46,3 +46,53 @@
     }
   }
 }
+
+.fallingDownEl {
+  opacity: 0;
+  position: relative;
+  animation: fallDown forwards;
+}
+
+@keyframes fallDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.goingUpEl {
+  opacity: 0;
+  position: relative;
+  animation: goUp forwards;
+}
+
+@keyframes goUp {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.showUpEl {
+  animation: showUp 2s forwards;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

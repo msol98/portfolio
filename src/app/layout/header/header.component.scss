@@ -4,7 +4,8 @@
   padding: 0 30px;
   max-width: 1260px;
   margin: 0 auto;
-  background-color: mat-color($dark);
+  background-color: #212121c2;
+  backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -31,4 +32,23 @@
   top: 0;
   z-index: 3;
   transition: 400ms;
+}
+
+.or1 {
+  animation-duration: 0.8s;
+}
+
+.or2 {
+  animation-delay: 300ms;
+  animation-duration: 0.8s;
+}
+
+.or3 {
+  animation-delay: 600ms;
+  animation-duration: 0.8s;
+}
+
+.or4 {
+  animation-delay: 900ms;
+  animation-duration: 0.8s;
 }
