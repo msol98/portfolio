@@ -1,7 +1,8 @@
 @import './../../../assets/stylesheets/theming.scss';
 
 .e-wrapper {
-  height: 100vh;
+  height: max-content;
+  padding: 170px 0;
 }
 
 .box {

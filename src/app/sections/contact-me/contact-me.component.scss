@@ -1,0 +1,17 @@
+@import './../../../assets/stylesheets/theming.scss';
+
+.c-wrapper {
+  height: max-content;
+  padding: 170px 0;
+}
+
+.c-title {
+  font-size: 35px !important;
+  margin-bottom: 25px;
+}
+
+.c-btn {
+  padding: 9px 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+}

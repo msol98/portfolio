@@ -24,6 +24,20 @@ a {
   position: fixed;
 }
 
+.primary {
+  color: mat-color($primary) !important;
+}
+
+.md-white {
+  color: mat-color($md-white) !important;
+}
+
+.title-border {
+  height: 1px;
+  opacity: 0.5;
+  background-color: mat-color($primary);
+}
+
 .code {
   font-family: Code;
   font-weight: bold;
@@ -34,6 +48,6 @@ a {
   }
   
   &::after {
-    content: '>'
+    content: '> '
   }
 }

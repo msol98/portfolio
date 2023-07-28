@@ -12,7 +12,7 @@ $typography: mat.define-typography-config(
   $font-family: Text,
 
   $headline: mat.define-typography-level(
-    $font-size: 40px,
+    $font-size: 53px,
     $font-weight: bold,
   ),
   $title: mat.define-typography-level(
@@ -26,6 +26,10 @@ $typography: mat.define-typography-config(
   ),
   $subheading-1: mat.define-typography-level(
     $font-size: 18px,
+    $line-height: 1.6,
+  ),
+  $body-1: mat.define-typography-level(
+    $font-size: 16px,
     $line-height: 1.6,
   ),
   $button: mat.define-typography-level(

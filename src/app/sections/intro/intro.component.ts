@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
 })
-export class IntroComponent { }
+export class IntroComponent {
+
+  navigateContact() {
+    document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}

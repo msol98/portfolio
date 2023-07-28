@@ -16,3 +16,17 @@
     margin: 5px;
   }
 }
+
+h2 {
+  margin-bottom: 0 !important;
+}
+
+.title-border.short {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.title-border.long {
+  width: 200px;
+  margin-left: 10px;
+}
