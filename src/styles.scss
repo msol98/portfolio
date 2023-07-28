@@ -33,10 +33,11 @@ a {
   color: mat-color($md-white) !important;
 }
 
-.title-border {
-  height: 1px;
-  opacity: 0.5;
-  background-color: mat-color($primary);
+.num {
+  color: mat-color($primary);
+  margin: 0 8px 13px 0;
+  font-family: Code;
+  font-size: 18px;
 }
 
 .code {

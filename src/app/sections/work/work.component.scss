@@ -3,6 +3,8 @@
 .w-wrapper {
   height: max-content;
   padding: 170px 0;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .w-wrapper,
@@ -16,11 +18,13 @@
   }
 
   .mat-tab-labels {
+    font-size: 19px;
     flex-direction: column !important;
 
     &::ng-deep * {
       color: mat-color($white);
-      justify-content: flex-end;
+      justify-content: flex-start;
+      padding-left: 0;
 
       &:hover {
         opacity: 1;
@@ -34,32 +38,46 @@
   }
 
   .mat-tab-body {
-    padding-left: 40px;
+    padding-left: 70px;
   }
 
   .mat-ink-bar {
     display: none;
   }
 
+  h3 {
+    margin-bottom: 10px;
+  }
+
   ul {
-    padding: 0;
+    padding-left: 15px;
+  }
+
+  li {
+    padding-left: 10px;
   }
 
   li::marker {
-    content: '';
-  }
-
-  li::before {
     content: '▹';
     margin-right: 15px;
     color: mat-color($primary);
   }
 }
 
+.w-desc {
+  color: mat-color($md-white);
+}
+
 .m-tech {
+  font-size: 16px;
   margin: 23px 0 0 27px;
 }
 
-h2 {
+.title {
   margin-bottom: 70px;
+}
+
+.small {
+  margin-left: 10px;
+  font-size: 16px;
 }

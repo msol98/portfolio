@@ -5,20 +5,7 @@
   padding: 170px 0;
 }
 
-.box {
-  width: 320px;
-  height: 290px;
-  font-size: 18px;
-  padding: 25px;
-  transition: 0.3s;
-  border-radius: 12px;
-  box-sizing: border-box;
-  color: mat-color($md-white);
-  background: mat-color($md-dark);
-}
-
 .name {
-  transition: 0.3s;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -29,10 +16,39 @@
   font-size: 16px;
 }
 
-.box:hover {
-  margin-top: -20px;
+.card {
+  border-radius: 10px;
+  width: 320px;
+  height: 290px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: mat-color($md-white);
+  background: mat-color($md-dark);
+  padding: 25px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
 
-  .name {
-    color: mat-color($primary);
-  }
+.card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+  background: mat-color($primary);
+  height: 290px;
+  width: 15px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.card:hover::before{
+  transform: scale(50);
+}
+
+.card:hover * {
+  color: mat-color($dark);
 }

@@ -1,7 +1,8 @@
 @import './../../../assets/stylesheets/theming.scss';
 
 .a-wrapper {
-  height: 100vh;
+  padding: 170px 0;
+  text-align: justify;
 }
 
 .skills {
@@ -17,16 +18,10 @@
   }
 }
 
-h2 {
-  margin-bottom: 0 !important;
-}
-
-.title-border.short {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.title-border.long {
-  width: 200px;
-  margin-left: 10px;
+.skill {
+  border-radius: 10px;
+  padding: 7px 17px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: mat-color($md-dark);
 }

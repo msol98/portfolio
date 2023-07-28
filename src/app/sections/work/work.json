@@ -1,30 +1,57 @@
 [
   {
-    "name": "Trustply",
-    "date": "Jul 2020 - Jun 2021",
-    "imageName": "trustply-logo",
-    "technology": ["Angular", "Typescript", "JavaScript", "Html", "css", "sass", "Bootstrap"],
-    "description": "<ul><li>Developed SPA applications using Angular framework to increase the performance. </li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers to drive Innovation and maximize conversions by 40%. </li><li>Translated visual designs to simple and clean codes.</li></ul>"
+    "name": "Portfolio website",
+    "date": "August 2021",
+    "imageName": "portfolio-website",
+    "technology": [
+      "Angular",
+      "Typescript",
+      "Html",
+      "css",
+      "Sass",
+      "Angular Material"
+    ],
+    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a Single-page Application, regarding clean code principles.</li></ul>"
+  },
+  {
+    "name": "Myket co.",
+    "date": "Jun 2021 - Present",
+    "imageName": "Mykey-logo",
+    "technology": [
+      "Angular",
+      "Typescript",
+      "JavaScript",
+      "Html",
+      "css",
+      "Sass",
+      "Angular Material"
+    ],
+    "description": "<ul><li>Developed Myket developers-panel frontend using Angular framework.</li><li>Created chat system for Myket application using ReactJS framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using pure JavaScript.</li><li>Added systems to the developers panel such as Google Analytics, FCM, Sentry, Clarity.</li></ul>"
   },
   {
     "name": "News Website",
     "date": "April 2020",
     "imageName": "news-website",
-    "technology": ["JavaScript", "Html", "css"],
+    "technology": [
+      "JavaScript",
+      "Html",
+      "css"
+    ],
     "description": "<ul><li>Created a responsive landing page for a news website from the desired photoshop design using Html, CSS and JavaScript. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
   },
   {
-    "name": "Myket",
-    "date": "Jun 2021 - Present",
-    "imageName": "Mykey-logo",
-    "technology": ["Angular", "Typescript", "JavaScript", "Html", "css", "sass", "Angular Material"],
-    "description": "<ul><li>Developed MVC architectural code in Angular 8 with over 80% accordance to the industry and company standards. </li><li>Added new features in innovating modules format, for instance created a ticketing system full frontend which improved both users and support team satisfaction by 45%. </li><li>Built API following restful standards to allow users to submit information by storing data in the database. </li><li>Developed user interfaces with Angular 8 Framework, HTML5 and CSS3 which improved user satisfaction by 45%. </li><li>Ensured the quality and technical feasibility of UI and UX designs.</li></ul>"
-  },
-  {
-    "name": "Portfolio website",
-    "date": "April 2021",
-    "imageName": "portfolio-website",
-    "technology": ["Angular", "Html", "css", "sass", "Angular Material"],
-    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a Single-page Application, regarding clean code principles.</li></ul>"
+    "name": "Trustply co.",
+    "date": "Jul 2020 - Jun 2021",
+    "imageName": "trustply-logo",
+    "technology": [
+      "Angular",
+      "Typescript",
+      "JavaScript",
+      "Html",
+      "css",
+      "Sass",
+      "Bootstrap"
+    ],
+    "description": "<ul><li>Developed Trustply website using Angular, HTML, CSS and Bootstrap.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and clean codes.</li></ul>"
   }
 ]

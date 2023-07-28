@@ -1,8 +1,13 @@
 <div class="w-wrapper">
-  <h2>Work Experiences and Projects</h2>
+  <div fxLayoutAlign="start center" class="title">
+    <span class="num">03.</span>
+    <h2>Work Experience</h2>
+    <div class="title-border long"></div>
+  </div>
+
   <mat-tab-group>
     <mat-tab *ngFor="let work of _works" [label]="work.name">
-      <h3>Frontend Developer<span class="primary"> @{{work.name}}</span></h3>
+      <h3>{{work.name}}<i class="primary small italic">{{work.date}}</i></h3>
       <div class="w-desc" [innerHtml]="work.description"></div>
       <div class="m-tech"><span *ngFor="let tech of work.technology" class="code">{{tech}}</span></div>
     </mat-tab>

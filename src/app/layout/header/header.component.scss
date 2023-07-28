@@ -21,6 +21,10 @@
   outline: none;
   padding: 0;
   font-size: 18px;
+
+  &:hover {
+    color: mat-color($primary);
+  }
 }
 
 .h-hide {

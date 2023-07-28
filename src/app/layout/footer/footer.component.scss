@@ -1,5 +1,9 @@
 @import './../../../assets/stylesheets/theming.scss';
 
-p {
-  color: mat-color($md-white);
+a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: mat-color($md-white) !important;
 }
