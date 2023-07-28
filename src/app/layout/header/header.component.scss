@@ -4,7 +4,7 @@
   padding: 0 30px;
   max-width: 1260px;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: mat-color($dark);
 }
 
 .logo {
@@ -20,4 +20,15 @@
   outline: none;
   padding: 0;
   font-size: 18px;
+}
+
+.h-hide {
+  top: -65px;
+  transition: 200ms;
+}
+
+.h-show {
+  top: 0;
+  z-index: 3;
+  transition: 400ms;
 }

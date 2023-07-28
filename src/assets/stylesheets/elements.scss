@@ -1,0 +1,48 @@
+@import './theming.scss';
+
+.prim-btn {
+  padding: 9px 26px !important;
+  border-radius: 12px !important;
+  outline: none;
+  border: 1px solid mat-color($primary) !important;
+  background-color: transparent;
+  transition: all .35s;
+  position: relative;
+
+  span.mat-button-wrapper {
+    z-index: 2;
+    font-size: 18px;
+    position: relative;
+    color: mat-color($primary);
+    align-items: center;
+    display: flex;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 11px;
+    background: mat-color($primary);
+    transition: all .35s;
+  }
+
+  &:hover {
+    span.mat-button-wrapper {
+      color: mat-color($dark);
+
+      &::after {
+        content: '\1F86A';
+        margin-left: 15px;
+        font-size: 20px;
+      }
+    }
+
+    &:after {
+      width: 100%;
+    }
+  }
+}
