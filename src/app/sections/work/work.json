@@ -19,6 +19,7 @@
     "imageName": "Mykey-logo",
     "technology": [
       "Angular",
+      "React.Js",
       "Typescript",
       "JavaScript",
       "Html",
@@ -26,7 +27,7 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Developed Myket developers-panel frontend using Angular framework.</li><li>Created chat system for Myket application using ReactJS framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using pure JavaScript.</li><li>Added systems to the developers panel such as Google Analytics, FCM, Sentry, Clarity.</li></ul>"
+    "description": "<ul><li>Developed Myket developers-panel frontend using Angular framework.</li><li>Created chat system for Myket application using React.JS framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using pure JavaScript.</li><li>Added services to the developers panel such as Google Analytics, FCM, Sentry, Clarity.</li></ul>"
   },
   {
     "name": "News Website",
@@ -52,6 +53,6 @@
       "Sass",
       "Bootstrap"
     ],
-    "description": "<ul><li>Developed Trustply website using Angular, HTML, CSS and Bootstrap.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and clean codes.</li></ul>"
+    "description": "<ul><li>Developed Trustply website using Angular, JavaScript and Typescript.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and clean codes.</li></ul>"
   }
 ]

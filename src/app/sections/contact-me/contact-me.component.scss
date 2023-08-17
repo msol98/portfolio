@@ -1,7 +1,7 @@
 @import './../../../assets/stylesheets/theming.scss';
 
 .c-wrapper {
-  height: 100vh;
+  height: calc(100vh - 30px);
 }
 
 .c-title {
