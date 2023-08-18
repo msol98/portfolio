@@ -56,7 +56,7 @@
   }
 }
 
-.fallingDownEl {
+.present .fallingDownEl {
   opacity: 0;
   position: relative;
   animation: fallDown forwards;
@@ -74,7 +74,7 @@
   }
 }
 
-.goingUpEl {
+.present .goingUpEl {
   opacity: 0;
   position: relative;
   animation: goUp forwards;
@@ -92,7 +92,7 @@
   }
 }
 
-.showUpEl {
+.present .showUpEl {
   animation: showUp 2s forwards;
 }
 

@@ -1,11 +1,15 @@
-<div class="mat-typography">
+<div class="mat-typography" #scrollArea>
   <app-header></app-header>
   <div class="content">
     <app-intro></app-intro>
-    <app-about-me id="about"></app-about-me>
-    <app-education id="education"></app-education>
-    <app-work id="work"></app-work>
-    <app-contact-me id="contact"></app-contact-me>
+    <div #component></div>
+    <app-about-me id="about" style="opacity: 0;"></app-about-me>
+    <div #component></div>
+    <app-education id="education" style="opacity: 0;"></app-education>
+    <div #component></div>
+    <app-work id="work" style="opacity: 0;"></app-work>
+    <div #component></div>
+    <app-contact-me id="contact" style="opacity: 0;"></app-contact-me>
     <app-footer></app-footer>
   </div>
 </div>
