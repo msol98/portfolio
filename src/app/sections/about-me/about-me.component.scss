@@ -1,4 +1,5 @@
 @import './../../../assets/stylesheets/theming.scss';
+@import './../../../assets/stylesheets/media-mixins.scss';
 
 .a-wrapper {
   padding: 170px 0;
@@ -26,6 +27,20 @@
   background-color: mat-color($md-dark);
 }
 
-.mt {
-  margin-top: -48px;
+@include media-large {
+  .mt {
+    margin-top: -48px;
+  }
+}
+
+@include media-mobile {
+  .a-wrapper {
+    padding: 50px 0 0;
+  }
+
+  .skill {
+    border-radius: 7px;
+    padding: 3px 9px;
+    font-size: 15px;
+  }
 }

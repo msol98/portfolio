@@ -1,12 +1,17 @@
-<div class="i-wrapper mat-typography" fxLayout="column" fxLayout.gt-sm="row" fxLayoutGap="30px" fxLayoutAlign="start center">
-  <div fxFlex="100%" fxFlex.gt-sm="75%" class="container">
+<div class="i-wrapper mat-typography" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="30px" fxLayoutAlign="start center">
+  <div fxFlex class="container">
     <h1 class="goingUpEl or1">Hello,<br/> I'm a <span class="code">Frontend Developer</span></h1>
     <h3 class="md-white goingUpEl or2">My name is Mina Soleimanzadeh. I turn letters into fancy websites,<br/> and I love what I do.</h3>
-    <button mat-button class="prim-btn goingUpEl or3" (click)="navigateContact()">
-      <span>Let's work together!</span>
-    </button>
+    <div fxHide.gt-xs class="center" style="margin-bottom: 50px">
+      <img class="image showUpEl" src="./../../../assets/images/image.png" alt="a photo of me"/>
+    </div>
+    <div fxLayoutAlign="center center" fxLayoutAlign.gt-xs="start start">
+      <button mat-button class="prim-btn goingUpEl or3" (click)="navigateContact()">
+        <span>Let's work together!</span>
+      </button>
+    </div>
   </div>
-  <div fxFlex="100%" fxFlex.gt-sm="25%">
+  <div fxHide.xs style="width: 250px">
     <img class="image showUpEl" src="./../../../assets/images/image.png" alt="a photo of me"/>
   </div>
 </div>

@@ -1,4 +1,5 @@
 @import './../../../assets/stylesheets/theming.scss';
+@import './../../../assets/stylesheets/media-mixins.scss';
 
 .e-wrapper {
   height: max-content;
@@ -24,7 +25,6 @@
 .card {
   border-radius: 10px;
   width: 365px;
-  height: 290px;
   border-radius: 12px;
   box-sizing: border-box;
   color: mat-color($md-white);
@@ -64,4 +64,20 @@ p {
 
 .badge {
   width: 36px;
+}
+
+@include media-large {
+  .card {
+    height: 290px;
+  }
+}
+
+@include media-mobile {
+  .name p {
+    font-size: 18px !important;
+  }
+
+  .e-wrapper {
+    padding: 150px 0 0;
+  }
 }

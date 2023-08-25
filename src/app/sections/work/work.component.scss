@@ -1,4 +1,5 @@
 @import './../../../assets/stylesheets/theming.scss';
+@import './../../../assets/stylesheets/media-mixins.scss';
 
 .w-wrapper {
   height: max-content;
@@ -9,58 +10,17 @@
 
 .w-wrapper,
 .w-wrapper ::ng-deep {
-  *:not(li) {
-    overflow: hidden !important;
-  }
-
-  .mat-tab-group {
-    flex-direction: row !important;
-  }
-
   .mat-tab-labels {
-    font-size: 19px;
-    flex-direction: column !important;
+    width: max-content;
 
     &::ng-deep * {
       color: mat-color($white);
-      justify-content: flex-start;
-      padding-left: 0;
-
-      &:hover {
-        opacity: 1;
-      }
     }
   }
 
-  .mat-tab-label-active {
-    opacity: 1;
-    border-right: 2px solid mat-color($primary) !important;
-  }
-
-  .mat-tab-body {
-    padding-left: 70px;
-  }
-
-  .mat-ink-bar {
-    display: none;
-  }
-
-  h3 {
-    margin-bottom: 10px;
-  }
-
-  ul {
-    padding-left: 15px;
-  }
-
-  li {
-    padding-left: 10px;
-  }
-
-  li::marker {
-    content: '▹';
-    margin-right: 15px;
-    color: mat-color($primary);
+  .mat-tab-list {
+    overflow-x: scroll;
+    margin-bottom: 25px;
   }
 }
 
@@ -74,10 +34,82 @@
 }
 
 .title {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .small {
   margin-left: 10px;
   font-size: 16px;
+}
+
+@include media-large {
+  .title {
+    margin-bottom: 70px;
+  }
+
+  .w-wrapper,
+  .w-wrapper ::ng-deep {
+    *:not(li) {
+      overflow: hidden !important;
+    }
+
+    .mat-tab-group {
+      flex-direction: row !important;
+    }
+
+    .mat-tab-labels {
+      font-size: 19px;
+      flex-direction: column !important;
+
+      &::ng-deep * {
+        justify-content: flex-start;
+        padding-left: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .mat-tab-label-active {
+      opacity: 1;
+      border-right: 2px solid mat-color($primary) !important;
+    }
+
+    .mat-tab-body {
+      padding-left: 70px;
+    }
+
+    .mat-ink-bar {
+      display: none;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    li {
+      padding-left: 10px;
+    }
+
+    li::marker {
+      content: '▹';
+      margin-right: 15px;
+      color: mat-color($primary);
+    }
+  }
+}
+
+@include media-mobile {
+  li {
+    font-size: 17px;
+  }
+
+  .w-wrapper {
+    padding: 150px 0 0;
+  }
 }

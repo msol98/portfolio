@@ -1,6 +1,7 @@
 @import './assets/stylesheets/theming.scss';
 @import './assets/stylesheets/elements.scss';
 @import './assets/stylesheets/fonts.scss';
+@import './assets/stylesheets/media-mixins.scss';
 
 body {
   margin: 0;
@@ -70,4 +71,28 @@ a {
   border: 4px solid mat-color($dark);
   border-radius: 10px;
   background: mat-color($md-dark);
+}
+
+
+@include media-mobile {
+  h1 {
+    font-size: 35px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  h5,
+  p {
+    font-size: 16px;
+  }
 }

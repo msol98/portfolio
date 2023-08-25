@@ -2,10 +2,10 @@
   <div fxLayoutAlign="start center" class="title">
     <span class="num">03.</span>
     <h2>Work Experience</h2>
-    <div class="title-border long"></div>
+    <div fxFlex.xs class="title-border long"></div>
   </div>
 
-  <mat-tab-group>
+  <mat-tab-group [disablePagination]="true">
     <mat-tab *ngFor="let work of _works" [label]="work.name">
       <h3>{{work.name}}<i class="primary small italic">{{work.date}}</i></h3>
       <div class="w-desc" [innerHtml]="work.description"></div>

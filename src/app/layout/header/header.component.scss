@@ -1,4 +1,5 @@
 @import './../../../assets/stylesheets/theming.scss';
+@import './../../../assets/stylesheets/media-mixins.scss';
 
 .mat-toolbar {
   padding: 0 30px;
@@ -25,6 +26,18 @@
   &:hover {
     color: mat-color($primary);
   }
+}
+
+::ng-deep .mat-menu-panel {
+  background-color: mat-color($md-dark);
+}
+
+::ng-deep .mat-menu-item {
+  color: mat-color($white) !important;
+}
+
+.menu-icon {
+  width: 20px;
 }
 
 .h-hide {
@@ -55,4 +68,15 @@
 .or4 {
   animation-delay: 900ms;
   animation-duration: 0.8s;
+}
+
+@include media-mobile {
+  .logo {
+    font-size: 22px;
+  }
+
+  .mat-toolbar {
+    height: 45px;
+    padding: 0 20px;
+  }
 }

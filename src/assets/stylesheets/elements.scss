@@ -1,4 +1,5 @@
 @import './theming.scss';
+@import './media-mixins.scss';
 
 .title-border {
   height: 2px;
@@ -103,5 +104,11 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@include media-mobile {
+  .title-border {
+    width: unset !important;
   }
 }
