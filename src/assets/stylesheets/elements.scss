@@ -94,7 +94,7 @@
 }
 
 .present .showUpEl {
-  animation: showUp 2s forwards;
+  animation: showUp 2s ease-in-out forwards;
 }
 
 @keyframes showUp {

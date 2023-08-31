@@ -54,8 +54,14 @@
   transform: scale(50);
 }
 
-.card:hover * {
+.card:hover {
+  * {
   color: mat-color($dark);
+  }
+
+  .e-link {
+    filter: brightness(0);
+  }
 }
 
 p {
@@ -64,6 +70,10 @@ p {
 
 .badge {
   width: 36px;
+}
+
+.e-link {
+  width: 20px;
 }
 
 @include media-large {

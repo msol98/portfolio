@@ -3,6 +3,7 @@
 
 .c-wrapper {
   height: calc(100vh - 30px);
+  position: relative;
 }
 
 .c-title {
@@ -19,14 +20,6 @@ h3 {
 .socials img {
   width: 25px;
   margin: 40px 8px 0;
-}
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  position: absolute;
-  bottom: 5px;
-  color: mat-color($md-white) !important;
 }
 
 @include media-mobile {

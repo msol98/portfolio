@@ -11,6 +11,14 @@
   animation-duration: 1s;
 }
 
+.footer {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: mat-color($md-white) !important;
+}
+
 @include media-mobile {
   .content {
     padding: 0 25px;
