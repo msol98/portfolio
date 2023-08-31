@@ -17,14 +17,22 @@ export class HeaderComponent implements OnInit {
     this.startPosition = window.scrollY;
     this.scroll$ = fromEvent(window, 'scroll').subscribe(e => {
       const currentPosition = window.scrollY;
-      if (this.startPosition <= currentPosition) {
-        this.header?.nativeElement.classList.remove('h-show');
-        this.header?.nativeElement.classList.add('h-hide');
-      } else {
-        this.header?.nativeElement.classList.remove('h-hide');
-        this.header?.nativeElement.classList.add('h-show');
-      }
+      if (this.startPosition <= currentPosition)
+        this.hideHeader();
+      else
+        this.showHeader();
       this.startPosition = currentPosition
     });
+    this.showHeader();
+  }
+
+  hideHeader() {
+    this.header?.nativeElement.classList.remove('h-show');
+    this.header?.nativeElement.classList.add('h-hide');
+  }
+
+  showHeader() {
+    this.header?.nativeElement.classList.remove('h-hide');
+    this.header?.nativeElement.classList.add('h-show');
   }
 }

@@ -32,7 +32,7 @@
     "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a Single-page Application, regarding clean code principles.</li></ul>"
   },
   {
-    "name": "News Website",
+    "name": "«Ma Hastim» News Website",
     "date": "April 2020",
     "imageName": "news-website",
     "technology": [
@@ -57,5 +57,16 @@
       "Bootstrap"
     ],
     "description": "<ul><li>Developed Trustply website using Angular, JavaScript and Typescript.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and clean codes.</li></ul>"
+  },
+  {
+    "name": "«Rosha Azma» Medical Website",
+    "date": "December 2021",
+    "imageName": "trustply-logo",
+    "technology": [
+      "Wordpress",
+      "Html",
+      "css"
+    ],
+    "description": "<ul><li>Built a WooCommerce website using Wordpress</li><li>Customized user interface using Html and CSS.</li></ul>"
   }
 ]
