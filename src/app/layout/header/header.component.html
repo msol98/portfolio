@@ -1,6 +1,8 @@
 <div #header class="w-100 fixed">
   <mat-toolbar fxLayoutAlign="space-between center">
-    <div class="logo showUpEl">Mina Sol</div>
+    <div class="logo showUpEl">
+      <img src="./../../../assets/images/logo.JPG" alt="logo" />
+    </div>
     <div fxHide.xs fxLayoutGap="30px" class="h-options">
       <a mat-button class="fallingDownEl or4" href="#about">About</a>
       <a mat-button class="fallingDownEl or3" href="#education">Education</a>
@@ -8,7 +10,7 @@
       <a mat-button class="fallingDownEl or1" href="#contact">Contact</a>
     </div>
     <button fxHide.gt-xs mat-icon-button [matMenuTriggerFor]="menu">
-      <img src="./../../../assets/images/menu.svg" class="menu-icon" />
+      <img src="./../../../assets/images/menu.svg" class="menu-icon" alt="menu" />
     </button>
     <mat-menu #menu="matMenu">
       <a mat-menu-item href="#about">About</a>
