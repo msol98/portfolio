@@ -21,6 +21,14 @@ h3 {
   margin: 40px 8px 0;
 }
 
+.footer {
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  color: mat-color($md-white) !important;
+}
+
 @include media-mobile {
   .c-wrapper {
     padding: 150px 0;

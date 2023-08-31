@@ -1,7 +1,51 @@
+@use '@angular/material' as mat;
 @import './assets/stylesheets/theming.scss';
 @import './assets/stylesheets/elements.scss';
 @import './assets/stylesheets/fonts.scss';
 @import './assets/stylesheets/media-mixins.scss';
+@import './assets/stylesheets/theming.scss';
+
+$typography: mat.define-typography-config(
+  $font-family: Text,
+
+  $headline: mat.define-typography-level(
+    $font-size: 53px,
+    $font-weight: bold,
+  ),
+  $title: mat.define-typography-level(
+    $font-size: 25px,
+    $font-weight: bold,
+  ),
+  $subheading-2: mat.define-typography-level(
+    $font-size: 22px,
+    $line-height: 1.6,
+    $font-weight: 500,
+  ),
+  $subheading-1: mat.define-typography-level(
+    $font-size: 18px,
+    $line-height: 1.6,
+  ),
+  $body-1: mat.define-typography-level(
+    $font-size: 18px,
+    $line-height: 1.7,
+  ),
+  $button: mat.define-typography-level(
+    $font-size: 18px,
+  ),
+);
+
+$theme: mat.define-light-theme((
+  typography: $typography,
+  color: (
+    primary: $primary,
+    accent: $accent,
+  ),
+));
+
+@include mat.core($theme);
+@include mat.core-theme($theme);
+@include mat.all-component-themes($theme);
+
 
 body {
   margin: 0;

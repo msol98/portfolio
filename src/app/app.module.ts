@@ -8,7 +8,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactMeComponent } from './sections/contact-me/contact-me.component';
 import { EducationComponent } from './sections/education/education.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
@@ -21,7 +20,6 @@ import { MaterialModule } from './material.module';
     ContactMeComponent,
     EducationComponent,
     HeaderComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
