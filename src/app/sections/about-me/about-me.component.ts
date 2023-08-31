@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent  {
 
-  skills = ['JavaScript', 'Angular +2', 'React.Js', 'Typescript', 'HTML', 'css', 'Sass', 'Angular Material', 'Bootstrap', 'git']
+  skills = ['JavaScript', 'Angular +2', 'React.Js', 'Typescript', 'HTML', 'css', 'Sass', 'Angular Material', 'Bootstrap', 'Git']
 
 }

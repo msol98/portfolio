@@ -29,6 +29,7 @@ export interface WorkModel {
   name: string
   date: string
   imageName: string
+  link?: string
   description: string
   technology: Array<string>
 } 

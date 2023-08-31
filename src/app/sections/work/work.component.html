@@ -1,13 +1,17 @@
 <div class="w-wrapper">
   <div fxLayoutAlign="start center" class="title">
     <span class="num">03.</span>
-    <h2>Work Experience</h2>
+    <h2>Works and Projects</h2>
     <div fxFlex.xs class="title-border long"></div>
   </div>
 
   <mat-tab-group [disablePagination]="true">
     <mat-tab *ngFor="let work of _works" [label]="work.name">
-      <h3>{{work.name}}<i class="primary small italic">{{work.date}}</i></h3>
+      <h3>{{work.name}}<i class="primary small italic">{{work.date}}</i>
+        <a *ngIf="work.link" target="_blank" [href]="work.link" class="w-link">
+          <img src="./../../../assets/images/link.svg" />
+        </a>
+      </h3>
       <div class="w-desc" [innerHtml]="work.description"></div>
       <div class="m-tech"><span *ngFor="let tech of work.technology" class="code">{{tech}}</span></div>
     </mat-tab>

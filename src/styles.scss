@@ -57,6 +57,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: #b39ddb86;
+}
+
 a {
   color: mat-color($primary);
   text-decoration: none;

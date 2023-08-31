@@ -33,6 +33,9 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
+  box-shadow: 0px 0px 13px 0px rgba(61, 61, 61, 0.75);
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(61, 61, 61, 0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(61, 61, 61, 0.75);
 }
 
 .card::before {
@@ -50,13 +53,13 @@
   transition: transform 0.25s ease-out;
 }
 
-.card:hover::before{
+.card:hover::before {
   transform: scale(50);
 }
 
 .card:hover {
   * {
-  color: mat-color($dark);
+    color: mat-color($dark);
   }
 
   .e-link {
@@ -69,7 +72,7 @@ p {
 }
 
 .badge {
-  width: 36px;
+  width: 45px;
 }
 
 .e-link {

@@ -3,6 +3,7 @@
     "name": "Myket co.",
     "date": "Jun 2021 - Present",
     "imageName": "Mykey-logo",
+    "link": "https://developer.myket.ir/fa",
     "technology": [
       "Angular",
       "React.Js",
@@ -19,6 +20,7 @@
     "name": "Portfolio website",
     "date": "August 2021",
     "imageName": "portfolio-website",
+    "link": "https://www.minasoleimanzadeh.com",
     "technology": [
       "Angular",
       "Typescript",
@@ -44,6 +46,7 @@
     "name": "Trustply co.",
     "date": "Jul 2020 - Jun 2021",
     "imageName": "trustply-logo",
+    "link": "https://trustply.com",
     "technology": [
       "Angular",
       "Typescript",

@@ -24,6 +24,17 @@
   }
 }
 
+.w-link {
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  margin-left: 6px;
+
+  img {
+    width: 15px;
+  }
+}
+
 .w-desc {
   color: mat-color($md-white);
 }
