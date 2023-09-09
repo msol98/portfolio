@@ -14,7 +14,7 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Developed Myket developers-panel frontend using Angular framework.</li><li>Created chat system for Myket application using React.JS framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using pure JavaScript.</li><li>Added services to the developers panel such as Google Analytics, FCM, Sentry, Clarity.</li></ul>"
+    "description": "<ul><li>Developed Myket developers-panel frontend using <span class='bold white'>Angular framework</bold>.</li><li>Created chat system for Myket application using <span class='bold white'>React.JS</span> framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using <span class='bold white'>Vanilla Js</span>.</li><li>Added services to the developers panel such as <span class='bold white'>Google Analytics, FCM, Sentry, Clarity</span>.</li></ul>"
   },
   {
     "name": "Portfolio website",
@@ -29,7 +29,7 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a Single-page Application, regarding clean code principles.</li></ul>"
+    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a <span class='bold white'>Single-page Application</span>, regarding <span class='bold white'>clean code</span> principles.</li></ul>"
   },
   {
     "name": "«Ma Hastim» News Website",
@@ -40,7 +40,7 @@
       "Html",
       "css"
     ],
-    "description": "<ul><li>Created a responsive landing page for a news website from the desired photoshop design using Html, CSS and JavaScript. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
+    "description": "<ul><li>Created a <span class='bold white'>responsive</span> landing page for a news website from the desired photoshop design using <span class='bold white'>Html, CSS and Vanilla Js</span>. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
   },
   {
     "name": "Trustply co.",
@@ -56,7 +56,7 @@
       "Sass",
       "Bootstrap"
     ],
-    "description": "<ul><li>Developed Trustply website using Angular, JavaScript and Typescript.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed cross-platform accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and clean codes.</li></ul>"
+    "description": "<ul><li>Developed Trustply website using <span class='bold white'>Angular and Typescript frameworks</span>.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed <span class='bold white'>cross-platform</span> accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and <span class='bold white'>clean codes</span>.</li></ul>"
   },
   {
     "name": "«Rosha Azma» Medical Website",
@@ -67,6 +67,6 @@
       "Html",
       "css"
     ],
-    "description": "<ul><li>Built a WooCommerce website using Wordpress</li><li>Customized user interface using Html and CSS.</li></ul>"
+    "description": "<ul><li>Built a WooCommerce website using <span class='bold white'>Wordpress</span></li><li>Customized user interface using Html and CSS.</li></ul>"
   }
 ]
