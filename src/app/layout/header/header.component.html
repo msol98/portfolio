@@ -1,20 +1,25 @@
 <div #header class="w-100 fixed">
   <mat-toolbar fxLayoutAlign="space-between center">
-    <a class="logo showUpEl" href="#">Mina Sol</a>
-    <div fxHide.xs fxLayoutGap="30px" class="h-options">
-      <a mat-button class="fallingDownEl or4" href="#about" id="headerAbout">About</a>
-      <a mat-button class="fallingDownEl or3" href="#education" id="headerEucation">Education</a>
-      <a mat-button class="fallingDownEl or2" href="#work" id="headerWork">Work</a>
-      <a mat-button class="fallingDownEl or1" href="#contact" id="headerContact">Contact</a>
+    <a class="logo showUpEl" href="#" fxLayoutAlign="center center">
+      <img src="assets/images/logo.png" alt="logo" />
+      <p>Mina Sol</p>
+    </a>
+
+    <div fxHide.lt-lg fxLayoutGap="30px" class="h-options">
+      <a mat-button class="fallingDownEl or4" href="#about" disableRipple>About</a>
+      <a mat-button class="fallingDownEl or3" href="#education" disableRipple>Education</a>
+      <a mat-button class="fallingDownEl or2" href="#work" disableRipple>Work</a>
     </div>
-    <button fxHide.gt-xs mat-icon-button [matMenuTriggerFor]="menu" id="menu">
-      <img src="./../../../assets/images/menu.svg" class="menu-icon" alt="menu" />
+    
+    <a fxHide.lt-lg href="mailto:mina.soleimanzadeh@gmail.com" class="talk-btn">Let's Talk</a>
+
+    <button fxHide.gt-md mat-icon-button [matMenuTriggerFor]="menu" id="menu">
+      <img src="assets/images/menu.svg" class="menu-icon" alt="menu" />
     </button>
     <mat-menu #menu="matMenu">
-      <a mat-menu-item href="#about" id="menuAbout">About</a>
-      <a mat-menu-item href="#education" id="menuEducation">Education</a>
-      <a mat-menu-item href="#work" id="menuWork">Work</a>
-      <a mat-menu-item href="#contact" id="menuContact">Contact</a>
+      <a mat-menu-item href="#about">About</a>
+      <a mat-menu-item href="#education">Education</a>
+      <a mat-menu-item href="#work">Work</a>
     </mat-menu>
   </mat-toolbar>
 </div>

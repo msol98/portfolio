@@ -2,40 +2,69 @@
 @import './../../../assets/stylesheets/media-mixins.scss';
 
 .mat-toolbar {
-  padding: 0 30px;
-  max-width: 1260px;
+  max-width: 1600px;
   margin: 0 auto;
-  background-color: #212121c2;
-  backdrop-filter: blur(10px);
+  height: 64px;
+  background-color: mat-color($bg);
 }
 
 .logo {
-  font-family: Logo;
+  font-family: Kalam;
+  font-weight: normal;
   cursor: pointer;
-  font-size: 30px;
-  color: mat-color($white);
+  font-size: 20px;
+  color: #000;
+
+  img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  p {
+    margin: 6px 0 0 0 !important;
+  }
 }
 
 .h-options a {
-  background-color: transparent;
-  color: mat-color($white);
-  border: none;
-  outline: none;
-  padding: 0;
-  font-size: 18px;
+  color: #616161;
+  font-family: 'Funnel Display';
+  font-size: 24px;
+  font-weight: 500;
 
   &:hover {
     color: mat-color($primary);
   }
+
+  ::ng-deep .mat-button-focus-overlay {
+    display: none !important;
+  }
+}
+
+.talk-btn {
+  color: #fff;
+  background-color: #000;
+  border-radius: 30px;
+  font-size: 22px;
+  height: 56px;
+  line-height: 56px;
+  width: 156px;
+  text-align: center;
 }
 
 ::ng-deep .mat-menu-panel {
-  background-color: #272727;
+  background-color: mat-color($bg);
+  border-radius: 16px !important;
+  box-shadow: 0px 10px 40px 0px #0000002E;
+}
+
+::ng-deep .mat-menu-content {
+  padding: 8px;
+  width: 167px;
 }
 
 ::ng-deep .mat-menu-item {
   font-size: 16px !important;
-  color: mat-color($md-white) !important;
+  font-family: 'Funnel Display';
 }
 
 .menu-icon {
@@ -43,7 +72,7 @@
 }
 
 .h-hide {
-  top: -65px;
+  top: -96px;
   transition: 200ms;
 }
 
@@ -72,13 +101,13 @@
   animation-duration: 0.8s;
 }
 
-@include media-mobile {
+@include media-desktop {
   .logo {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .mat-toolbar {
-    height: 45px;
+    height: 96px;
     padding: 0 20px;
   }
 }
