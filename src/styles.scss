@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  color: mat-color($white);
-  background-color: mat-color($dark);
+  color: #000;
+  background-color: mat-color($bg);
 }
 
 html {
@@ -39,6 +39,10 @@ a {
   position: fixed;
 }
 
+.font-display {
+  font-family: 'Funnel Display';
+}
+
 .primary {
   color: mat-color($primary) !important;
 }
@@ -54,22 +58,7 @@ a {
 .num {
   color: mat-color($primary);
   margin: 0 8px 13px 0;
-  font-family: Code;
   font-size: 18px;
-}
-
-.code {
-  font-family: Code;
-  font-weight: bold;
-  color: mat-color($primary);
-
-  &::before {
-    content: '<'
-  }
-
-  &::after {
-    content: '> '
-  }
 }
 
 ::-webkit-scrollbar {
@@ -77,15 +66,14 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: mat-color($dark);
+  background: mat-color($bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 4px solid mat-color($dark);
+  border: 4px solid mat-color($bg);
   border-radius: 10px;
-  background: mat-color($md-dark);
+  background: mat-color($bg);
 }
-
 
 @include media-mobile {
   h1 {
