@@ -1,9 +1,8 @@
 @use '@angular/material' as mat;
 @import '~@angular/material/theming';
 
-$primary: mat.define-palette(mat.$deep-purple-palette, 200);
-$accent: mat.define-palette(mat.$cyan-palette, 200);
-$dark: mat.define-palette(mat.$grey-palette, 900);
-$md-dark: mat.define-palette(mat.$grey-palette, 800);
+$primary: mat.define-palette(mat.$deep-purple-palette, 500);
+$accent: mat.define-palette(mat.$deep-purple-palette, 300);
+$bg: mat.define-palette(mat.$grey-palette, 50);
 $white: mat.define-palette(mat.$grey-palette, 200);
 $md-white: mat.define-palette(mat.$grey-palette, 400);

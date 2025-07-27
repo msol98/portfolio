@@ -29,7 +29,6 @@
   border-radius: 12px;
   box-sizing: border-box;
   color: mat-color($md-white);
-  background: mat-color($md-dark);
   padding: 25px;
   position: relative;
   z-index: 0;
@@ -51,7 +50,7 @@ p {
   width: 20px;
 }
 
-@include media-large {
+@include media-desktop {
   .card {
     height: 290px;
   }

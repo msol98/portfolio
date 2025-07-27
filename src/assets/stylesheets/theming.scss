@@ -2,7 +2,7 @@
 @import './colors.scss';
 
 $typography: mat.define-typography-config(
-  $font-family: Text,
+  $font-family: 'Funnel Sans',
 
   $headline: mat.define-typography-level(
     $font-size: 53px,

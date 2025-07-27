@@ -1,23 +1,41 @@
 @font-face {
-  font-family: Logo;
+  font-family: Kalam;
   font-weight: 400;
-  src: url(./../fonts/Caveat.woff);
+  src: url(./../fonts/kalam/Kalam-Bold.ttf);
 }
 
 @font-face {
-  font-family: Text;
+  font-family: 'Funnel Display';
   font-weight: 400;
-  src: url(./../fonts/Gantari.woff);
+  src: url(./../fonts/funnel-display/FunnelDisplay-Regular.ttf);
 }
 
 @font-face {
-  font-family: Text;
-  font-weight: bold;
-  src: url(./../fonts/Gantari-Bold.woff);
+  font-family: 'Funnel Display';
+  font-weight: 500;
+  src: url(./../fonts/funnel-display/FunnelDisplay-Medium.ttf);
 }
 
 @font-face {
-  font-family: Code;
+  font-family: 'Funnel Display';
+  font-weight: 700;
+  src: url(./../fonts/funnel-display/FunnelDisplay-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
   font-weight: 400;
-  src: url(./../fonts/Mono.woff);
+  src: url(./../fonts/funnel-sans/FunnelSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  font-weight: 500;
+  src: url(./../fonts/funnel-sans/FunnelSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Funnel Sans';
+  font-weight: 700;
+  src: url(./../fonts/funnel-sans/FunnelSans-Bold.ttf);
 }
