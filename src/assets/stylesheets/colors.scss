@@ -2,7 +2,8 @@
 @import '~@angular/material/theming';
 
 $primary: mat.define-palette(mat.$deep-purple-palette, 500);
-$accent: mat.define-palette(mat.$deep-purple-palette, 300);
+$accent: mat.define-palette(mat.$deep-purple-palette, 200);
+$grey: mat.define-palette(mat.$grey-palette, 700);
 $bg: mat.define-palette(mat.$grey-palette, 50);
 $white: mat.define-palette(mat.$grey-palette, 200);
 $md-white: mat.define-palette(mat.$grey-palette, 400);

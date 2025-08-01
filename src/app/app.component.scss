@@ -2,8 +2,8 @@
 @import './../assets/stylesheets/media-mixins.scss';
 
 .content {
-  padding: 0 35px;
-  max-width: 1200px;
+  padding: 64px 24px 0;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -16,11 +16,10 @@
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
-  color: mat-color($md-white) !important;
 }
 
-@include media-mobile {
+@include media-desktop {
   .content {
-    padding: 0 25px;
+    padding: 96px 64px 0;
   }
 }

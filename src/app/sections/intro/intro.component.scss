@@ -1,25 +1,45 @@
-@import './../../../assets/stylesheets/colors.scss';
-@import './../../../assets/stylesheets/media-mixins.scss';
-
-h1 {
-  margin-bottom: 35px !important;
-  line-height: 1.2 !important;
-}
+@use 'stylesheets/colors.scss' as *;
+@use 'stylesheets/media-mixins.scss' as *;
 
 h3 {
-  margin-bottom: 80px !important;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
 }
 
-.i-wrapper {
-  padding: 50px 0 150px;
-  height: 100vh;
+.wrapper {
+  padding-top: 72px;
+  min-height: 100vh;
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
-  background: mat-color($primary);
-  border-radius: 50%;
+.counter-title {
+  color: mat-color($grey);
+  font-size: 24px;
+  margin: 92px 0 24px;
+}
+
+.counter {
+
+  span,
+  .count {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 4px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  span {
+    align-self: flex-start !important;
+  }
+
+  .label {
+    color: mat-color($grey);
+    font-size: 12px;
+    margin: 0;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .or1 {
@@ -36,20 +56,37 @@ h3 {
   animation-duration: 1s;
 }
 
-@include media-mobile {
-  .i-wrapper {
-    padding: 115px 0 100px;
-  }
+@include media-desktop {
+  .counter {
 
-  h1 {
-    margin-bottom: 40px !important;
+    span,
+    .count {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    .label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@include media-mobile-and-tablet {
+  .image {
+    max-width: 280px;
+    height: unset;
   }
 
   h3 {
-    margin-bottom: 70px !important;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
   }
 
-  .image {
-    max-width: 200px;
+  .counter-title {
+    font-size: 16px;
+    margin: 55px 0 16px;
+    text-align: center;
   }
 }

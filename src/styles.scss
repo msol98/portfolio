@@ -40,11 +40,15 @@ a {
 }
 
 .font-display {
-  font-family: 'Funnel Display';
+  font-family: 'Funnel Display' !important;
 }
 
 .primary {
   color: mat-color($primary) !important;
+}
+
+.accent {
+  color: mat-color($accent) !important;
 }
 
 .md-white {

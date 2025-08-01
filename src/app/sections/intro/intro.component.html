@@ -1,14 +1,30 @@
-<div class="i-wrapper mat-typography" fxLayout="column" fxLayout.gt-xs="row" fxLayoutGap="30px" fxLayoutAlign="start center">
+<div class="wrapper mat-typography" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="55px" fxLayout.gt-md="row" fxLayoutGap.gt-md="92px" fxLayoutAlign.gt-md="start start">
   <div fxFlex class="container">
-    <h1 class="goingUpEl or1">Hello,<br/> I'm a <span class="code">Frontend Developer</span></h1>
-    <h3 class="md-white goingUpEl or2">My name is Mina Soleimanzadeh. I turn letters into fancy websites,<br/> and I love what I do.</h3>
-    <div fxLayoutAlign="start start">
-      <button mat-button class="prim-btn goingUpEl or3" (click)="navigateContact()" id="introBtn">
-        <span>Let's work together!</span>
-      </button>
-    </div>
+    <h3 class="primary font-display">My portfolio is in light — but all the thinking happens in dark:</h3>
+    <h3 class="accent font-display">terminal open, cursor blinking, brain fully ON.</h3>
+    <section>
+      <p class="counter-title">⏳  Coding has been my focus for:</p>
+      <div class="counter" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutAlign.gt-md="start center">
+        <div>
+          <p class="count">05</p>
+          <p class="label">Years</p>
+        </div><span>:</span>
+        <div>
+          <p class="count">05</p>
+          <p class="label">Months</p>
+        </div><span>:</span>
+        <div>
+          <p class="count">05</p>
+          <p class="label">Days</p>
+        </div><span>:</span>
+        <div>
+          <p class="count">05</p>
+          <p class="label">Hours</p>
+        </div>
+      </div>
+    </section>
   </div>
-  <div fxHide.xs style="width: 250px">
-    <img class="image showUpEl" src="./../../../assets/images/image.png" alt="a photo of me"/>
+  <div fxHide.xs>
+    <img class="image" src="assets/images/phone.png" alt="a cellphone" width="340" height="692" />
   </div>
 </div>
