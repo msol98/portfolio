@@ -10,6 +10,7 @@ h3 {
 .wrapper {
   padding-top: 72px;
   min-height: 100vh;
+  font-family: 'Funnel Display';
 }
 
 .counter-title {
@@ -42,23 +43,8 @@ h3 {
   }
 }
 
-.or1 {
-  animation-duration: 1s;
-}
-
-.or2 {
-  animation-delay: 0.5s;
-  animation-duration: 1s;
-}
-
-.or3 {
-  animation-delay: 1s;
-  animation-duration: 1s;
-}
-
 @include media-desktop {
   .counter {
-
     span,
     .count {
       font-size: 64px;
