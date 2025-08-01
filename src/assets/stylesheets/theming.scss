@@ -1,37 +1,7 @@
 @use '@angular/material' as mat;
 @import './colors.scss';
 
-$typography: mat.define-typography-config(
-  $font-family: 'Funnel Sans',
-
-  $headline: mat.define-typography-level(
-    $font-size: 53px,
-    $font-weight: bold,
-  ),
-  $title: mat.define-typography-level(
-    $font-size: 25px,
-    $font-weight: bold,
-  ),
-  $subheading-2: mat.define-typography-level(
-    $font-size: 22px,
-    $line-height: 1.6,
-    $font-weight: 500,
-  ),
-  $subheading-1: mat.define-typography-level(
-    $font-size: 18px,
-    $line-height: 1.6,
-  ),
-  $body-1: mat.define-typography-level(
-    $font-size: 18px,
-    $line-height: 1.7,
-  ),
-  $button: mat.define-typography-level(
-    $font-size: 18px,
-  ),
-);
-
 $theme: mat.define-light-theme((
-  typography: $typography,
   color: (
     primary: $primary,
     accent: $accent,

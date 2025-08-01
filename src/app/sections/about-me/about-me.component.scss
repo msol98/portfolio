@@ -1,44 +1,77 @@
-@import './../../../assets/stylesheets/colors.scss';
-@import './../../../assets/stylesheets/media-mixins.scss';
+@import 'stylesheets/colors.scss';
+@import 'stylesheets/media-mixins.scss';
 
-.a-wrapper {
+.wrapper {
   padding: 170px 0;
 }
 
-.skills {
+h4 {
+  color: mat-color($grey);
+  margin-bottom: 40px;
 
-  &>div {
-    width: 45px;
-    height: 45px;
+  strong {
+    color: #000;
+  }
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.skills-title {
+  margin-bottom: 48px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  div {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
   }
 
   img {
     width: 100%;
-    margin: 5px;
+    height: 100%;
+    object-fit: contain;
   }
-}
-
-.skill {
-  border-radius: 10px;
-  padding: 7px 17px;
-  margin: 5px;
-  font-size: 16px;
 }
 
 @include media-desktop {
   .mt {
-    margin-top: -48px;
+    margin-top: -40px;
+  }
+
+  .text-section {
+    max-width: 700px;
   }
 }
 
-@include media-mobile {
-  .a-wrapper {
+@include media-mobile-and-tablet {
+  .wrapper {
     padding: 60px 0 90px 0;
   }
 
-  .skill {
-    border-radius: 7px;
-    padding: 3px 9px;
-    font-size: 15px;
+  h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .skills div {
+    width: 56px;
+    height: 56px;
   }
 }

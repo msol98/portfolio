@@ -8,19 +8,34 @@ body {
   margin: 0;
   color: #000;
   background-color: mat-color($bg);
+  font-family: 'Funnel Sans';
+  font-size: 20px;
+  line-height: 28px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-::selection {
-  background: #b39ddb86;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
 }
 
 a {
   color: mat-color($primary);
   text-decoration: none;
+}
+
+.mat-button {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Funnel Sans';
+}
+
+::selection {
+  color: #000;
+  background: #b39ddb86;
 }
 
 .w-100 {
@@ -59,10 +74,13 @@ a {
   color: mat-color($white) !important;
 }
 
-.num {
+.section-title {
   color: mat-color($primary);
-  margin: 0 8px 13px 0;
-  font-size: 18px;
+  font-family: 'Funnel Display' !important;
+  margin: 0 40px 0 0;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 40px;
 }
 
 ::-webkit-scrollbar {
@@ -79,25 +97,17 @@ a {
   background: mat-color($bg);
 }
 
-@include media-mobile {
-  h1 {
-    font-size: 40px !important;
+.mr-16 {
+  margin-right: 16px !important;
+}
+
+@include media-mobile-and-tablet {
+  .section-title {
+    margin: 0 0 20px 0;
+    font-size: 24px;
   }
 
-  h2 {
-    font-size: 24px !important;
-  }
-
-  h3 {
-    font-size: 18px !important;
-  }
-
-  h4 {
-    font-size: 17px !important;
-  }
-
-  h5,
-  p {
-    font-size: 16px;
+  .mat-button {
+    font-size: 18px;
   }
 }

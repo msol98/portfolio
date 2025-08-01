@@ -1,32 +1,34 @@
-<div class="a-wrapper mat-typograph" fxLayout="column" fxLayoutGap="15px" fxLayoutGap.gt-xs="40px">
-<div fxLayoutAlign="start center">
-  <span class="num">01.</span>
-  <h2>About Me</h2>
-  <div fxFlex.xs class="title-border long"></div>
-</div>
+<div class="wrapper">
+  <h2 class="section-title">01 About me</h2>
 
-<div fxLayout="column" fxLayoutAlign="space-between start" fxLayout.gt-xs="row">
+  <div fxLayout="column" fxLayoutGap="100px" fxLayoutAlign="center center"
+    fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign.gt-md="space-between start">
 
-  <section fxFlex="60%" class="md-white">
-    <h4>
-      I love writing codes as well as painting and designing, so my interest in <span class="bold white">frontend development</span> raised from these
-      two interests of mine. I followed my dreams and learned all I needed. So I did multiple projects including this
-      portfolio website.<br/>
-      Currently you can find me creating new features and pages mainly using <span class="bold white">Angular, React.Js and JavaScript</span> at Myket.
-      Prior to Myket, I was busy bringing web designs pixel by pixel into life at Trustply.
-    </h4>
-    <h4> You can also view my
-      <a href="https://drive.google.com/file/d/1J88fZqwfypXTHck3hFqIScCWDkRPoJqM/view?usp=sharing" class="code"
-        target="_blank">résumé</a>.
-    </h4>
-  </section>
+    <section fxFlex class="text-section">
+      <h4>
+        My name is Mina Soleimanzadeh. I’ve always loved coding, painting, and designing – so it’s no surprise
+        <strong>frontend development</strong> became my playground.
+        I followed my dreams (and countless tutorials) to learn everything I needed,
+        eventually building multiple projects, including this portfolio you’re browsing right now.
+        These days, you’ll find me crafting shiny new features and pages with <strong>Angular</strong>,
+        <strong>React.js</strong>, and <strong>JavaScript</strong> at Myket. Before that, I spent my days at Trustply,
+        turning web designs into pixel-perfect realities – one div at a time.
+      </h4>
+      <h4> Wondering how my journey’s been going? Check it out here:</h4>
+      <div>
+        <button mat-button mat-flat-button color="primary" class="rounded-btn mr-16">My Work</button>
+        <button mat-button mat-stroked-button class="rounded-btn black-stroked">My Resume</button>
+      </div>
+    </section>
 
-  <section fxFlex="30%" class="mt">
-    <h4 class="bold">I can speak in:</h4>
-    <div fxLayout="row wrap">
-      <div class="skill" *ngFor="let skill of skills">{{skill}}</div>
-    </div>
-  </section>
+    <section class="mt">
+      <h5 class="skills-title bold font-display">I fluently speak in:</h5>
+      <div class="skills">
+        <div *ngFor="let skill of [].constructor(16); let i = index">
+          <img [src]="'assets/images/skills/s' + (i+1) + '.png'" />        
+        </div>
+      </div>
+    </section>
 
-</div>
+  </div>
 </div>
