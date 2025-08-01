@@ -25,8 +25,8 @@
     <section class="mt">
       <h5 class="skills-title bold font-display">I fluently speak in:</h5>
       <div class="skills">
-        <div *ngFor="let skill of [].constructor(16); let i = index">
-          <img [src]="'assets/images/skills/s' + (i+1) + '.png'" />        
+        <div *ngFor="let skill of skills; let i = index" [attr.data-label]="skill">
+          <img [src]="'assets/images/skills/' + skill + '.png'" [alt]="skill" />        
         </div>
       </div>
     </section>
