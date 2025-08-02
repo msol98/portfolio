@@ -1,20 +1,28 @@
 @import './../../../assets/stylesheets/colors.scss';
 @import './../../../assets/stylesheets/media-mixins.scss';
 
-.w-wrapper {
+.wrapper {
   height: max-content;
   padding: 170px 0;
   max-width: 1000px;
   margin: 0 auto;
+
+  &,
+  * {
+    font-family: "Funnel Sans";
+  }
 }
 
-.w-wrapper,
-.w-wrapper ::ng-deep {
+.wrapper,
+.wrapper ::ng-deep {
   .mat-tab-labels {
     width: max-content;
 
     &::ng-deep * {
-      color: mat-color($white);
+      -webkit-tap-highlight-color: transparent;
+      font-weight: 600;
+      opacity: 1;
+      font-size: 14px;
     }
   }
 
@@ -24,7 +32,7 @@
 
   .mat-tab-list {
     overflow-x: scroll;
-    margin-bottom: 25px;
+    padding: 0 !important;
   }
 
   ul {
@@ -32,14 +40,21 @@
   }
 
   li {
-    padding-left: 10px;
+    padding-left: 3px;
   }
 
-  li::marker {
-    content: '▹';
-    margin-right: 15px;
-    color: mat-color($primary);
+  .mat-tab-body-wrapper {
+    justify-content: center;
   }
+}
+
+.work-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.work-date {
+  font-size: 12.5px;
 }
 
 .w-link {
@@ -53,31 +68,36 @@
   }
 }
 
-.w-desc {
-  color: mat-color($md-white);
+.work-img {
+  border-radius: 12px;
+  width: 100%;
 }
 
-.m-tech {
-  font-size: 16px;
-  margin: 23px 0 0 25px;
+.work-desc {
+  font-size: 17px;
+  color: mat-color($grey);
 }
 
-.title {
-  margin-bottom: 20px;
+.work-tag {
+  font-size: 17px;
+  color: mat-color($primary);
+  margin-right: 10px;
+  font-family: 'Funnel Display' !important;
+
+  &::before {
+    content: '#';
+  }
 }
 
-.small {
-  margin-left: 10px;
-  font-size: 16px;
+.rounded-btn {
+  margin-top: 24px;
+  padding: 8px !important;
 }
 
 @include media-desktop {
-  .title {
-    margin-bottom: 70px;
-  }
 
-  .w-wrapper,
-  .w-wrapper ::ng-deep {
+  .wrapper,
+  .wrapper ::ng-deep {
     *:not(li) {
       overflow: hidden !important;
     }
@@ -87,12 +107,12 @@
     }
 
     .mat-tab-labels {
-      font-size: 19px;
       flex-direction: column !important;
 
       &::ng-deep * {
         justify-content: flex-start;
-        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px !important;
 
         &:hover {
           opacity: 1;
@@ -100,13 +120,18 @@
       }
     }
 
+    .mat-tab-label {
+      opacity: 0.5;
+      color: #000 !important;
+    }
+
     .mat-tab-label-active {
       opacity: 1;
-      border-right: 2px solid mat-color($primary) !important;
+      border-left: 2px solid mat-color($primary) !important;
     }
 
     .mat-tab-body {
-      padding-left: 70px;
+      padding-left: 40px;
     }
 
     .mat-ink-bar {
@@ -117,14 +142,36 @@
       margin-bottom: 10px;
     }
   }
-}
 
-@include media-mobile {
-  ul {
-    font-size: 16px;
+  .work-tag,
+  .work-desc {
+    font-size: 18px !important;
   }
 
-  .w-wrapper {
-    padding: 60px 0 0 0;
+  .work-date {
+    font-size: 14px;
+  }
+
+  .rounded-btn {
+    margin-top: 36px;
+  }
+}
+
+@include media-mobile-and-tablet {
+  .rounded-btn {
+    padding: 2px !important;
+  }
+
+  .wrapper ::ng-deep .mat-tab-body {
+    max-width: 420px;
+  }
+
+  .work-img {
+    margin: 24px 0;
+    height: 200px;
+  }
+
+  .rounded-btn {
+    width: 100% !important;
   }
 }

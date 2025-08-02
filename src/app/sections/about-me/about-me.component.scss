@@ -107,3 +107,13 @@ h5 {
     height: 56px;
   }
 }
+
+.rounded-btn {
+  padding: 8px !important;
+}
+
+@include media-mobile-and-tablet {
+  .rounded-btn {
+    padding: 6px !important;
+  }
+}

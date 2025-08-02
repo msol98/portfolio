@@ -114,7 +114,6 @@
 // }
 
 .rounded-btn {
-  padding: 8px !important;
   min-width: 180px !important;
   border-radius: 50px !important;
 }
@@ -125,7 +124,6 @@
 
 @include media-mobile-and-tablet {
   .rounded-btn {
-    padding: 6px !important;
     width: 180px !important;
     border-radius: 50px !important;
   }

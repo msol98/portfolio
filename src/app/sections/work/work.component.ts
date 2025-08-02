@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import * as works from './work.json';
 
 @Component({
@@ -6,30 +6,17 @@ import * as works from './work.json';
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss']
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent {
 
-  _works: WorkModel[] = (works as any).default;
-  selectedWork?: WorkModel;
-  technologies: Array<string> = [];
+  works: WorkModel[] = (works as any).default;
 
-  constructor() {
-    this.select(this._works[0]);
-  }
-
-  ngOnInit(): void {
-  }
-
-  select(option: WorkModel) {
-    this.selectedWork = option;
-    this.technologies =option.technology;
-  }
 }
 
 export interface WorkModel {
-  name: string
+  title: string
   date: string
   imageName: string
   link?: string
   description: string
-  technology: Array<string>
+  tags: Array<string>
 } 

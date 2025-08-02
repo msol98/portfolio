@@ -1,10 +1,10 @@
 [
   {
-    "name": "Myket co.",
+    "title": "Myket co.",
     "date": "Jun 2021 - Present",
     "imageName": "Mykey-logo",
     "link": "https://developer.myket.ir/fa",
-    "technology": [
+    "tags": [
       "Angular",
       "React.Js",
       "Typescript",
@@ -14,14 +14,14 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Developed Myket developers-panel frontend using <span class='bold white'>Angular framework</bold>.</li><li>Created chat system for Myket application using <span class='bold white'>React.JS</span> framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using <span class='bold white'>Vanilla Js</span>.</li><li>Added services to the developers panel such as <span class='bold white'>Google Analytics, FCM, Sentry, Clarity</span>.</li></ul>"
+    "description": "<ul><li>Developed Myket developers-panel frontend using <strong>Angular framework</bold>.</li><li>Created chat system for Myket application using <strong>React.JS</strong> framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using <strong>Vanilla Js</strong>.</li><li>Added services to the developers panel such as <strong>Google Analytics, FCM, Sentry, Clarity</strong>.</li></ul>"
   },
   {
-    "name": "Portfolio website",
+    "title": "Portfolio website",
     "date": "August 2021",
     "imageName": "portfolio-website",
     "link": "https://www.minasoleimanzadeh.com",
-    "technology": [
+    "tags": [
       "Angular",
       "Typescript",
       "Html",
@@ -29,25 +29,25 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a <span class='bold white'>Single-page Application</span>, regarding <span class='bold white'>clean code</span> principles.</li></ul>"
+    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a <strong>Single-page Application</strong>, regarding <strong>clean code</strong> principles.</li></ul>"
   },
   {
-    "name": "«Ma Hastim» News Website",
+    "title": "News Website",
     "date": "April 2020",
     "imageName": "news-website",
-    "technology": [
+    "tags": [
       "JavaScript",
       "Html",
       "css"
     ],
-    "description": "<ul><li>Created a <span class='bold white'>responsive</span> landing page for a news website from the desired photoshop design using <span class='bold white'>Html, CSS and Vanilla Js</span>. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
+    "description": "<ul><li>Created a <strong>responsive</strong> landing page for a news website from the desired photoshop design using <strong>Html, CSS and Vanilla Js</strong>. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
   },
   {
-    "name": "Trustply co.",
+    "title": "Trustply co.",
     "date": "Jul 2020 - Jun 2021",
     "imageName": "trustply-logo",
     "link": "https://trustply.com",
-    "technology": [
+    "tags": [
       "Angular",
       "Typescript",
       "JavaScript",
@@ -56,17 +56,17 @@
       "Sass",
       "Bootstrap"
     ],
-    "description": "<ul><li>Developed Trustply website using <span class='bold white'>Angular and Typescript frameworks</span>.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed <span class='bold white'>cross-platform</span> accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and <span class='bold white'>clean codes</span>.</li></ul>"
+    "description": "<ul><li>Developed Trustply website using <strong>Angular and Typescript frameworks</strong>.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed <strong>cross-platform</strong> accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and <strong>clean codes</strong>.</li></ul>"
   },
   {
-    "name": "«Rosha Azma» Medical Website",
+    "title": "Medical Website",
     "date": "December 2021",
     "imageName": "trustply-logo",
-    "technology": [
+    "tags": [
       "Wordpress",
       "Html",
       "css"
     ],
-    "description": "<ul><li>Built a WooCommerce website using <span class='bold white'>Wordpress</span></li><li>Customized user interface using Html and CSS.</li></ul>"
+    "description": "<ul><li>Built a WooCommerce website using <strong>Wordpress</strong></li><li>Customized user interface using Html and CSS.</li></ul>"
   }
 ]
