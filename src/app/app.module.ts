@@ -11,22 +11,23 @@ import { HeaderComponent } from './layout/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
+import { WorkModule } from './sections/work/work.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
-    WorkComponent,
     AboutMeComponent,
     ContactMeComponent,
     EducationComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    WorkModule
   ],
   providers: [{ provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: { disabled: true } }],
   bootstrap: [AppComponent]

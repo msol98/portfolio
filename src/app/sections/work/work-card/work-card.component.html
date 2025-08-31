@@ -1,0 +1,7 @@
+<div *ngIf="work" class="work-card">
+  <img [src]="work.image" class="bg-img" alt="work image" />
+
+  <p class="company-name">{{work.companyName}}</p>
+  <p class="title">{{work.title}}</p>
+  <button mat-button class="rounded-btn w-100" (click)="handleWorkOpen()">Read More</button>
+</div>

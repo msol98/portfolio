@@ -1,10 +1,13 @@
 [
   {
-    "title": "Myket co.",
+    "id": "myket",
+    "title": "Front-end Developer",
+    "companyName": "Myket",
+    "type": "job",
     "date": "Jun 2021 - Present",
-    "imageName": "Mykey-logo",
+    "image": "Mykey-logo",
     "link": "https://developer.myket.ir/fa",
-    "tags": [
+    "technologies": [
       "Angular",
       "React.Js",
       "Typescript",
@@ -17,11 +20,13 @@
     "description": "<ul><li>Developed Myket developers-panel frontend using <strong>Angular framework</bold>.</li><li>Created chat system for Myket application using <strong>React.JS</strong> framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using <strong>Vanilla Js</strong>.</li><li>Added services to the developers panel such as <strong>Google Analytics, FCM, Sentry, Clarity</strong>.</li></ul>"
   },
   {
+    "id": "portfolio-website",
     "title": "Portfolio website",
+    "type": "project",
     "date": "August 2021",
-    "imageName": "portfolio-website",
+    "image": "portfolio-website",
     "link": "https://www.minasoleimanzadeh.com",
-    "tags": [
+    "technologies": [
       "Angular",
       "Typescript",
       "Html",
@@ -32,10 +37,12 @@
     "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a <strong>Single-page Application</strong>, regarding <strong>clean code</strong> principles.</li></ul>"
   },
   {
+    "id": "news-website",
     "title": "News Website",
+    "type": "project",
     "date": "April 2020",
-    "imageName": "news-website",
-    "tags": [
+    "image": "news-website",
+    "technologies": [
       "JavaScript",
       "Html",
       "css"
@@ -43,11 +50,14 @@
     "description": "<ul><li>Created a <strong>responsive</strong> landing page for a news website from the desired photoshop design using <strong>Html, CSS and Vanilla Js</strong>. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
   },
   {
-    "title": "Trustply co.",
+    "id": "trustply",
+    "title": "Front-end Developer",
+    "companyName": "Trustply",
+    "type": "job",
     "date": "Jul 2020 - Jun 2021",
-    "imageName": "trustply-logo",
+    "image": "trustply-logo",
     "link": "https://trustply.com",
-    "tags": [
+    "technologies": [
       "Angular",
       "Typescript",
       "JavaScript",
@@ -57,16 +67,5 @@
       "Bootstrap"
     ],
     "description": "<ul><li>Developed Trustply website using <strong>Angular and Typescript frameworks</strong>.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed <strong>cross-platform</strong> accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and <strong>clean codes</strong>.</li></ul>"
-  },
-  {
-    "title": "Medical Website",
-    "date": "December 2021",
-    "imageName": "trustply-logo",
-    "tags": [
-      "Wordpress",
-      "Html",
-      "css"
-    ],
-    "description": "<ul><li>Built a WooCommerce website using <strong>Wordpress</strong></li><li>Customized user interface using Html and CSS.</li></ul>"
   }
 ]

@@ -1,0 +1,50 @@
+@import 'stylesheets/media-mixins.scss';
+
+.work-card {
+  padding: 20px 16px;
+  border-radius: 20px;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+}
+
+.company-name {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 8px;
+  color: #fff;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 8px 8px 28px 8px;
+  color: #fff;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+
+@include media-desktop {
+  .company-name {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 22px;
+    height: 52px;
+    line-height: 52px;
+  }
+}

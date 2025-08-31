@@ -2,19 +2,12 @@
   <h2 class="section-title">02 Works and Projects</h2>
 
   <mat-tab-group [disablePagination]="true">
-    <mat-tab *ngFor="let work of works" [label]="work.title">
-      <div fxLayout="column" fxLayout.gt-md="row-reverse" fxLayoutGap.gt-md="60px">
-        <div class="work-img" style="border: 1px solid #ececec"></div>
-        <div class="text-wrapper">
-          <h3 class="work-title">{{work.title}} <i class="primary italic work-date">{{work.date}}</i></h3>
-          <div class="work-desc" [innerHtml]="work.description"></div>
-          <div><span *ngFor="let tag of work.tags" class="work-tag">{{tag}}</span></div>
-          <a *ngIf="work.link" target="_blank" [href]="work.link" mat-button mat-stroked-button
-            class="rounded-btn black-stroked">
-            Read More
-          </a>
-        </div>
-      </div>
+    <mat-tab label="Works">
+      <app-work-card *ngFor="let job of jobList" [work]="job" (workClicked)="openWorkDetails($event)"></app-work-card>
+    </mat-tab>
+
+    <mat-tab label="Project">
+      <app-work-card *ngFor="let project of projectList" [work]="project" (workClicked)="openWorkDetails($event)"></app-work-card>
     </mat-tab>
   </mat-tab-group>
 </div>

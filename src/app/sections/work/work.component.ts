@@ -1,22 +1,35 @@
-import { Component } from '@angular/core';
-import * as works from './work.json';
+import { Component, OnInit } from '@angular/core';
+import { WorkListItemModel, WorkType } from 'src/app/models/work-models';
+import works from './work.json';
+import { MatDialog } from '@angular/material/dialog';
+import { WorkDetailsComponent } from './work-details/work-details.component';
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss']
 })
-export class WorkComponent {
+export class WorkComponent implements OnInit {
 
-  works: WorkModel[] = (works as any).default;
+  jobList: WorkListItemModel[] = [];
+  projectList: WorkListItemModel[] = [];
 
+  constructor(private dialog: MatDialog) { }
+
+  ngOnInit() {
+    this.projectList = works.filter(work => work.type == WorkType.PROJECT).map(({ id, title, image, companyName }) => ({ id, title, image, companyName }));
+    this.jobList = works.filter(work => work.type == WorkType.JOB).map(({ id, title, image, companyName }) => ({ id, title, image, companyName }));
+  }
+
+  openWorkDetails(workId: string) {
+    if (!workId) return;
+
+    const work = works.find(work => work.id == workId);
+    if (!work) return;
+
+    this.dialog.open(WorkDetailsComponent, {
+      data: work,
+      width: '700px',
+    });
+  }
 }
-
-export interface WorkModel {
-  title: string
-  date: string
-  imageName: string
-  link?: string
-  description: string
-  tags: Array<string>
-} 
