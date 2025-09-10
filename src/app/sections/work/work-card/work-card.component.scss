@@ -40,6 +40,12 @@ button {
   height: 40px;
   line-height: 40px;
   width: 100% !important;
+
+  img {
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
 }
 
 @include media-desktop {
@@ -55,5 +61,22 @@ button {
     font-size: 22px;
     height: 52px;
     line-height: 52px;
+  }
+}
+
+.work-card:hover {
+  border-radius: 36px;
+
+  .dark-cover {
+    background: linear-gradient(#6541A620, #6441a6a6) !important;
+  }
+
+  button {
+    color: #6541A6 !important;
+
+    img {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
