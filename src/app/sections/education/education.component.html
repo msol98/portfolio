@@ -1,44 +1,22 @@
-<div class="e-wrapper" fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px" fxLayoutGap.gt-xs="70px">
-  <div fxLayoutAlign="center center">
-    <div fxFlex.xs class="title-border short"></div>
-    <span class="num">02.</span>
-    <h2>Education<span fxHide.xs> and Certificates</span></h2>
-    <div fxFlex.xs class="title-border short"></div>
-  </div>
+<div class="wrapper">
+  <h2 class="section-title">03 Education and Certificates</h2>
 
-  <div fxLayoutAlign="center center" fxLayoutGap="20px" fxLayoutGap.gt-sm="40px" fxLayout="column" fxLayout.gt-sm="row" style="width: 100%">
-    <div class="card">
-      <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="start center" class="name">
-        <img src="./../../../assets/images/degree.png" class="badge" alt="degree" />
-        <p>Electrical Engineering BSc.</p>
-      </div><br />
-      <p>Iran University of Science and Technology</p>
-      <p class="date">2016 - 2021</p>
-    </div>
-
-    <div class="card">
-      <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start center" class="name">
-        <img src="./../../../assets/images/badge.png" class="badge" alt="badge" />
-        <p>Interactivity with JavaScript</p>
-        <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/7KM5VMQTH9D9" style="height: 20px;">
-          <img class="e-link" src="./../../../assets/images/link.svg" />
-        </a>
-      </div><br />
-      <p>University of Michigan (Coursera)</p>
-      <p class="date">July 2020</p>
-    </div>
-
-    <div class="card">
-      <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start center" class="name">
-        <img src="./../../../assets/images/badge.png" class="badge" alt="badge" />
-        <p>Introduction to HTML5</p>
-        <a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/67L839VPYNKT" style="height: 20px;">
-          <img class="e-link" src="./../../../assets/images/link.svg" />
-        </a>
-      </div><br />
-      <p>University of Michigan (Coursera)</p>
-      <p class="date">July 2020</p>
+  <div fxLayoutGap="20px" fxLayoutGap.gt-sm="24px" fxLayout="column" fxLayout.gt-md="row" style="width: 100%">
+    <div class="card" *ngFor="let certificate of certificates" fxFlex.gt-md="33.33%"
+      fxLayout="column" fxLayout.gt-xs="row-reverse" fxLayout.gt-md="column">
+      <img [src]="certificate.imageUrl" class="img" fxFlex.sm="50%" fxFlex.md="50%" />
+      <div class="text-section" fxFlex>
+        <ng-container *ngIf="!certificate.link; else link">
+          <p class="title">{{certificate.title}}</p>
+        </ng-container>
+        <ng-template #link>
+          <a class="title" [href]="certificate.link" target="_blank">{{certificate.title}}
+            <img src="assets/images/link.svg" width="24" height="24" class="v-middle ml-5" />
+          </a>
+        </ng-template>
+        <p class="source">{{certificate.source}}</p>
+        <p class="date">{{certificate.date}}</p>
+      </div>
     </div>
   </div>
-
 </div>
