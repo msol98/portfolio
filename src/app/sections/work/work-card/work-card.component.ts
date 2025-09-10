@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { WorkListItemModel } from 'src/app/models/work-models';
+import { WorkListItemModel } from 'src/app/models/models';
 
 @Component({
   selector: 'app-work-card',

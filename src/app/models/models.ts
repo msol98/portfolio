@@ -20,3 +20,11 @@ export enum WorkType {
   JOB = 'job',
   PROJECT = 'project'
 } 
+
+export interface CertificateModel {
+  title: string,
+  source: string,
+  date: string,
+  imageUrl: string,
+  link?: string
+}

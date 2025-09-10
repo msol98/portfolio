@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkListItemModel, WorkType } from 'src/app/models/work-models';
+import { WorkListItemModel, WorkType } from 'src/app/models/models';
 import works from './work.json';
 import { MatDialog } from '@angular/material/dialog';
 import { WorkDetailsComponent } from './work-details/work-details.component';

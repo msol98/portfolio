@@ -1,6 +1,6 @@
 import { Component, ElementRef, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { WorkModel } from 'src/app/models/work-models';
+import { WorkModel } from 'src/app/models/models';
 
 @Component({
   selector: 'app-work-details',
