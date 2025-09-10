@@ -5,7 +5,12 @@
     "companyName": "Myket",
     "type": "job",
     "date": "Jun 2021 - Present",
-    "image": "Mykey-logo",
+    "image": [
+      "/assets/images/works/myket-1.JPG",
+      "/assets/images/works/myket-2.JPG",
+      "/assets/images/works/myket-3.JPG",
+      "/assets/images/works/myket-4.JPG"
+    ],
     "link": "https://developer.myket.ir/fa",
     "technologies": [
       "Angular",
@@ -17,7 +22,7 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Developed Myket developers-panel frontend using <strong>Angular framework</bold>.</li><li>Created chat system for Myket application using <strong>React.JS</strong> framework</li><li>Added ticketing-panel using Angular framework.</li><li>Created several campaign web-pages using <strong>Vanilla Js</strong>.</li><li>Added services to the developers panel such as <strong>Google Analytics, FCM, Sentry, Clarity</strong>.</li></ul>"
+    "description": "When I joined the team, the goal was clear: build experiences that felt fast, intuitive, and reliable. I started by shaping the core of the project as a Single Page Application (SPA), which gave users smoother navigation and a sense of flow across the platform. From there, I dove into both Angular and React, developing and maintaining user-facing features that had to balance performance with polish. Translating designs from Figma into pixel-perfect HTML, CSS, and SASS, I made sure every page carried visual consistency and worked seamlessly across devices, whether on desktop or mobile.<br /><br />Beyond building, I focused on stability and scalability. I integrated testing frameworks like Jest and Karma to catch regressions early and maintain long-term quality. With Angular Service Worker, I streamlined deployments and introduced push notifications to keep users updated without disrupting their experience. Monitoring tools like Google Tag Manager and Microsoft Clarity gave us real insights into user behavior, while Sentry became our safety net for error tracking and resolution. On the feature side, I implemented subscription flows, purchase tracking, and feedback modules in MVC projects, embedded them into the Myket mobile app as web views, and built an in-app messaging system in React powered by SignalR and WebSockets for real-time communication.<br /><br />State management was another critical piece—I worked with NgRx, RxJS, and Zustand to keep complex data flows predictable and maintainable. To optimize performance, I introduced lazy loading and reduced bundle sizes, which had an immediate impact on speed. Collaborating closely with backend developers, designers, and product managers, I didn’t just ship features; I helped shape how the product felt in users’ hands. And when recurring bundle loading errors appeared, I took the lead on investigating them through Sentry insights, coordinating fixes that reduced user disruption and strengthened the system for the future."
   },
   {
     "id": "portfolio-website",
@@ -34,20 +39,23 @@
       "Sass",
       "Angular Material"
     ],
-    "description": "<ul><li>Designed the portfolio website in new modern user-friendly techniques.</li><li>Developed the portfolio website as a <strong>Single-page Application</strong>, regarding <strong>clean code</strong> principles.</li></ul>"
+    "description": "I designed and built my portfolio website with a focus on modern, user-friendly techniques that highlight both usability and visual appeal. Every decision—from layout to interaction—was made to create a smooth experience that reflects my design sensibility while keeping navigation simple and intuitive.<br /><br />To bring it to life, I developed the site as a Single Page Application (SPA), ensuring fast performance and seamless transitions between sections. Throughout the process, I applied clean code principles, structuring the project for readability, maintainability, and future growth. The result is a personal platform that not only showcases my work but also embodies the standards I bring to every project."
   },
   {
     "id": "news-website",
     "title": "News Website",
     "type": "project",
     "date": "April 2020",
-    "image": "news-website",
+    "image": [
+      "/assets/images/works/news-website-1.JPG",
+      "/assets/images/works/news-website-2.JPG"
+    ],
     "technologies": [
       "JavaScript",
       "Html",
       "css"
     ],
-    "description": "<ul><li>Created a <strong>responsive</strong> landing page for a news website from the desired photoshop design using <strong>Html, CSS and Vanilla Js</strong>. </li><li>Built website pages in clean and optimum way to maintain readability and prevent repetitive coding.</li></ul>"
+    "description": "I developed a fully responsive website including home page and multiple innser pages, transforming a Photoshop design into a smooth, functional web experience using HTML, CSS, and Vanilla JavaScript. The project emphasized precision in translating the design into a pixel-perfect interface while ensuring accessibility and adaptability across different screen sizes.<br /><br />To keep the codebase clean and maintainable, I focused on writing optimized, reusable components and structuring the pages for maximum readability. This approach not only reduced redundancy but also made future updates and scaling easier. The result was a streamlined, modern news website that balances strong visuals with efficient performance."
   },
   {
     "id": "trustply",
@@ -55,17 +63,76 @@
     "companyName": "Trustply",
     "type": "job",
     "date": "Jul 2020 - Jun 2021",
-    "image": "trustply-logo",
+    "image": [
+      "/assets/images/works/trustply-1.JPG",
+      "/assets/images/works/trustply-2.JPG"
+    ],
     "link": "https://trustply.com",
     "technologies": [
       "Angular",
       "Typescript",
       "JavaScript",
       "Html",
-      "css",
-      "Sass",
+      "CSS",
       "Bootstrap"
     ],
-    "description": "<ul><li>Developed Trustply website using <strong>Angular and Typescript frameworks</strong>.</li><li>Created responsive and functional user interfaces with Html, CSS and Bootstrap, that allowed <strong>cross-platform</strong> accessibility to the website on all mediums and screen sizes. </li><li>Collaborated with back-end developers, designers and QA testers.</li><li>Translated visual designs to simple and <strong>clean codes</strong>.</li></ul>"
+    "description": "I remotely contributed to Trustply, a startup based in Edmonton, Canada, focused on facilitating peer-to-peer exchanges for users, as well as providing a local business directory and live currency rate checking. I developed the website using JavaScript and Angular within a single-page application (SPA) architecture, ensuring smooth navigation and a seamless user experience. Later, I re-crafted the UI with HTML, CSS, and Bootstrap, designing a responsive and intuitive interface that adapts across devices while maintaining clarity and functionality.<br /><br />This project involved close collaboration with a multidisciplinary team of backend developers, designers, and QA testers to deliver a polished, high-quality product. I managed version control using Git and coordinated feature branches through GitLab, which helped maintain an organized, scalable codebase. The experience sharpened my ability to translate complex requirements into elegant, user-friendly solutions while thriving in a remote, startup environment."
+  },
+  {
+    "id": "stopwatch",
+    "title": "Stopwatch",
+    "type": "project",
+    "date": "June 2024",
+    "image": [
+      "/assets/images/works/stopwatch-1.JPG",
+      "/assets/images/works/stopwatch-2.JPG"
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Jest",
+      "Html",
+      "Tailwind CSS"
+    ],
+    "description": "I created a minimalistic stopwatch application using JavaScript, React.js, and TailwindCSS, designed to be lightweight, responsive, and easy to use. The interface embraces simplicity while providing accurate time tracking and a smooth user experience across devices.<br /><br />A key part of this project was implementing Redux for state management, ensuring precise handling of timer states (start, stop, reset, lap) and making the logic predictable and maintainable. This structure also makes the project easy to extend with new features in the future. The codebase is open to clone and fork, reflecting my commitment to clean, shareable, and scalable development practices."
+  },
+  {
+    "id": "calculate-me",
+    "title": "Calculate Me",
+    "type": "project",
+    "date": "June 2024",
+    "image": [
+      "/assets/images/works/calculate-me-1.JPG",
+      "/assets/images/works/calculate-me-2.JPG"
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Jest",
+      "Html",
+      "Tailwind CSS"
+    ],
+    "description": "I built a minimalistic calculator application designed for simplicity and speed, leveraging JavaScript, React.js, and TailwindCSS to deliver a clean and modern user interface. The app supports the four essential arithmetic operations—addition, subtraction, multiplication, and division—while maintaining a responsive layout that adapts smoothly across devices.<br /><br />To ensure reliability and scalability, I implemented state management with Redux, streamlining the flow of data and improving overall performance. The application was thoroughly tested using the Jest framework, which strengthened its stability and helped catch edge cases early. This project highlights my ability to architect efficient state management solutions that keep applications predictable, maintainable, and ready to scale."
+  },
+  {
+    "id": "tic-tac-toe",
+    "title": "Tic Tac Toe",
+    "type": "project",
+    "date": "June 2024",
+    "image": [
+      "/assets/images/works/tic-tac-toe-1.JPG",
+      "/assets/images/works/tic-tac-toe-2.JPG"
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Jest",
+      "Html",
+      "Tailwind CSS"
+    ],
+    "description": "I developed a classic Tic-Tac-Toe game with a modern twist, built using JavaScript, React.js, and TailwindCSS. The design keeps the interface clean and minimal, offering an enjoyable and responsive gameplay experience across devices. Players can easily track moves and outcomes while engaging with the timeless logic-based game.<br /><br />To enhance functionality, I integrated Redux for state management, which keeps track of the game board, player turns, and winning conditions in a predictable and scalable way. This not only simplifies the game logic but also makes the codebase easier to extend—for example, adding score tracking or multiple game modes. The project is open to clone and fork, showcasing my focus on writing clean, collaborative, and maintainable code."
   }
 ]
