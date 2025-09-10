@@ -1,7 +1,25 @@
-<mat-dialog-content>
-  <ng-container *ngIf="work">
-    <img [src]="work.image" class="banner" alt="work banner" />
-    <p class="title">{{work.title}}</p>
-    <p class="company-name">{{work.companyName}}</p>
-  </ng-container>
-</mat-dialog-content>
+<ng-container *ngIf="work">
+  <div mat-dialog-title>
+    <div class="dialog-header" #dialogHeader>
+      <button class="back-btn" mat-dialog-close>
+        <img src="assets/images/chevron-left.svg" class="mr-5 v-middle" width="24" height="24" />Back</button>
+    </div>
+  </div>
+
+  <mat-dialog-content (scroll)="handleScroll($event)">
+    <img [src]="work.image[0]" class="banner" alt="work banner" height="250" />
+
+    <div class="p-20">
+      <p class="title">{{work.title}}</p>
+      <p class="work-details">{{work.companyName ? work.companyName + ' | ' : ''}}{{work.date}}</p>
+      <div class="work-tech">
+        <p>Technologies used:</p>
+        <span *ngFor="let tech of work.technologies; let last = last">{{tech + (last ? '' : ', ')}}</span>
+      </div>
+      <div class="work-desc" [innerHtml]="work.description"></div>
+      <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="15px">
+        <img *ngFor="let img of work.image | slice:1" [src]="img" class="work-gallery" alt="work image" />
+      </div>
+    </div>
+  </mat-dialog-content>
+</ng-container>

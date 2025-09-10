@@ -1,7 +1,10 @@
 <div *ngIf="work" class="work-card">
   <img [src]="work.image" class="bg-img" alt="work image" />
 
-  <p class="company-name">{{work.companyName}}</p>
-  <p class="title">{{work.title}}</p>
-  <button mat-button class="rounded-btn w-100" (click)="handleWorkOpen()">Read More</button>
+  <div class="dark-cover h-100 z-2 relative" fxLayout="column">
+    <div fxFlex></div>
+    <p class="company-name">{{work.companyName}}</p>
+    <p class="title">{{work.title}}</p>
+    <button mat-button class="rounded-btn w-100" (click)="handleWorkOpen()">Read More</button>
+  </div>
 </div>

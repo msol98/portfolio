@@ -17,8 +17,8 @@ export class WorkComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
-    this.projectList = works.filter(work => work.type == WorkType.PROJECT).map(({ id, title, image, companyName }) => ({ id, title, image, companyName }));
-    this.jobList = works.filter(work => work.type == WorkType.JOB).map(({ id, title, image, companyName }) => ({ id, title, image, companyName }));
+    this.projectList = works.filter(work => work.type == WorkType.PROJECT).map(({ id, title, image, companyName }) => ({ id, title, image: image[0], companyName }));
+    this.jobList = works.filter(work => work.type == WorkType.JOB).map(({ id, title, image, companyName }) => ({ id, title, image: image[0], companyName }));
   }
 
   openWorkDetails(workId: string) {

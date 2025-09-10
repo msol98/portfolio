@@ -9,7 +9,7 @@ export interface WorkModel {
   id: string,
   title: string,
   companyName?: string
-  image: string
+  image: string[]
   date: string
   link?: string
   description: string
