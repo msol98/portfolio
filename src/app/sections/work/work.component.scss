@@ -33,7 +33,7 @@
     }
 
     .mat-tab-label:not(.mat-tab-label-active)  ::ng-deep .mat-tab-label-content {
-      color: #616161 !important;
+      color: mat-color($grey) !important;
       font-weight: 400 !important;
     }
   }
@@ -89,7 +89,8 @@
   }
 
   ::ng-deep .mat-tab-label-active {
-    border-left: 2px solid #6541A6;
+    border-left: 2px solid;
+    border-color: mat-color($primary) !important;
   }
 
   ::ng-deep .mat-ink-bar {

@@ -1,5 +1,5 @@
-@import './../../../assets/stylesheets/colors.scss';
-@import './../../../assets/stylesheets/media-mixins.scss';
+@import 'stylesheets/colors.scss';
+@import 'stylesheets/media-mixins.scss';
 
 .section-title {
   margin-bottom: 32px;
@@ -13,6 +13,33 @@
   overflow: hidden;
   border-radius: 16px;
   border: 1px solid #D7D7D7;
+
+  .img-cover {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .title img {
+    filter: brightness(0);
+  }
+
+  &:hover {
+    .img-cover {
+      background: linear-gradient(#6541A620, #6441a6a6) !important;
+    }
+
+    .text-section * {
+      color: mat-color($primary) !important;
+    }
+
+    .title img {
+      filter: none;
+    }
+  }
 }
 
 .text-section {

@@ -2,16 +2,19 @@
   <h2 class="section-title center">03 Education and Certificates</h2>
 
   <div fxLayoutGap="20px" fxLayoutGap.gt-sm="24px" fxLayout="column" fxLayout.gt-md="row" style="width: 100%">
-    <div class="card" *ngFor="let certificate of certificates" fxFlex.gt-md="33.33%"
-      fxLayout="column" fxLayout.gt-xs="row-reverse" fxLayout.gt-md="column">
-      <img [src]="certificate.imageUrl" class="img" fxFlex.sm="50%" fxFlex.md="50%" />
+    <div class="card" *ngFor="let certificate of certificates" fxFlex.gt-md="33.33%" fxLayout="column"
+      fxLayout.gt-xs="row-reverse" fxLayout.gt-md="column">
+      <div style="position: relative;">
+        <div class="img-cover"></div>
+        <img [src]="certificate.imageUrl" class="img" fxFlex.sm="50%" fxFlex.md="50%" />
+      </div>
       <div class="text-section" fxFlex>
         <ng-container *ngIf="!certificate.link; else link">
           <p class="title">{{certificate.title}}</p>
         </ng-container>
         <ng-template #link>
           <a class="title" [href]="certificate.link" target="_blank">{{certificate.title}}
-            <img src="assets/images/link.svg" width="24" height="24" class="v-middle ml-5" />
+            <img src="assets/images/link-primary.svg" width="24" height="24" class="v-middle ml-5" />
           </a>
         </ng-template>
         <p class="source">{{certificate.source}}</p>

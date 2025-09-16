@@ -1,3 +1,4 @@
+@import 'stylesheets/colors.scss';
 @import 'stylesheets/media-mixins.scss';
 
 .work-card {
@@ -72,7 +73,7 @@ button {
   }
 
   button {
-    color: #6541A6 !important;
+    color: mat-color($primary) !important;
 
     img {
       opacity: 1;

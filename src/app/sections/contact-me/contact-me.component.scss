@@ -1,5 +1,5 @@
-@import './../../../assets/stylesheets/colors.scss';
-@import './../../../assets/stylesheets/media-mixins.scss';
+@import 'stylesheets/colors.scss';
+@import 'stylesheets/media-mixins.scss';
 
 
 .wrapper {
@@ -9,7 +9,7 @@
 }
 
 .text-secondary {
-  color: #616161;
+  color: mat-color($grey);
   font-size: 20px;
   margin: 0;
 }
@@ -28,9 +28,13 @@
   img {
     margin: 0 8px 0;
 
+    &.link {
+      filter: brightness(0);
+    }
+
     &.light {
       display: none;
-    } 
+    }
   }
 
   p {
@@ -39,9 +43,13 @@
 
   &:hover {
     color: #fff;
-    background-color: #603AA5;
+    background-color: mat-color($primary);
 
     img {
+      &.link {
+        filter: none;
+      }
+
       &.light {
         display: block;
       }
