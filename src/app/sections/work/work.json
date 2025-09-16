@@ -29,7 +29,12 @@
     "title": "Portfolio website",
     "type": "project",
     "date": "August 2021",
-    "image": "portfolio-website",
+    "image": [
+      "/assets/images/works/portfolio-1.JPG",
+      "/assets/images/works/portfolio-2.JPG",
+      "/assets/images/works/portfolio-3.JPG",
+      "/assets/images/works/portfolio-4.JPG"
+    ],
     "link": "https://www.minasoleimanzadeh.com",
     "technologies": [
       "Angular",
