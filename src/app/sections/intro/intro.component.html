@@ -6,19 +6,19 @@
       <p class="counter-title">⏳  Coding has been my focus for:</p>
       <div class="counter" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutAlign.gt-md="start center">
         <div>
-          <p class="count">05</p>
+          <p class="count">{{ pad(time.years) }}</p>
           <p class="label">Years</p>
         </div><span>:</span>
         <div>
-          <p class="count">05</p>
+          <p class="count">{{ pad(time.months) }}</p>
           <p class="label">Months</p>
         </div><span>:</span>
         <div>
-          <p class="count">05</p>
+          <p class="count">{{ pad(time.days) }}</p>
           <p class="label">Days</p>
         </div><span>:</span>
         <div>
-          <p class="count">05</p>
+          <p class="count">{{ pad(time.hours) }}</p>
           <p class="label">Hours</p>
         </div>
       </div>
