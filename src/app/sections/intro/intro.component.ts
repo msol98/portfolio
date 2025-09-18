@@ -6,25 +6,17 @@ import { interval, Subscription } from 'rxjs';
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss']
 })
-export class IntroComponent  implements OnInit, OnDestroy {
+export class IntroComponent implements OnInit, OnDestroy {
 
   private subscription?: Subscription;
-  startDate = new Date(2021, 6, 1); // July 1, 2021 (month is 0-indexed)
+  startDate = new Date(2021, 6, 1);
   time = { years: 0, months: 0, days: 0, hours: 0 };
 
   ngOnInit() {
-     this.calculateTime(); // initial calc
-    this.subscription = interval(1000 * 60 * 60).subscribe(() => { // update every hour
-      this.calculateTime();
-    });
+    this.calculateTime();
+    this.subscription = interval(1000 * 60 * 60).subscribe(() => this.calculateTime());
   }
 
-  navigateContact() {
-    document.getElementById('contact')?.scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-  
   calculateTime() {
     const now = new Date();
     let years = now.getFullYear() - this.startDate.getFullYear();
@@ -50,10 +42,6 @@ export class IntroComponent  implements OnInit, OnDestroy {
 
     this.time = { years, months, days, hours };
   }
-
-  pad(num: number): string {
-  return num < 10 ? '0' + num : num.toString();
-}
 
   ngOnDestroy() {
     this.subscription?.unsubscribe();

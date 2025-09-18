@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
 import { WorkModule } from './sections/work/work.module';
+import { PadPipe } from './tools/pad.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WorkModule } from './sections/work/work.module';
     AboutMeComponent,
     ContactMeComponent,
     EducationComponent,
-    HeaderComponent
+    HeaderComponent,
+    PadPipe
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,26 @@
-<div class="wrapper" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="55px" fxLayout.gt-md="row" fxLayoutGap.gt-md="92px" fxLayoutAlign.gt-md="start start">
+<div class="wrapper" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="55px" fxLayout.gt-md="row"
+  fxLayoutGap.gt-md="92px" fxLayoutAlign.gt-md="start start">
   <div fxFlex>
     <h3 class="primary font-display">My portfolio is in light — but all the thinking happens in dark:</h3>
     <h3 class="accent font-display">terminal open, cursor blinking, brain fully ON.</h3>
     <section>
-      <p class="counter-title">⏳  Coding has been my focus for:</p>
-      <div class="counter" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutAlign.gt-md="start center">
+      <p class="counter-title">⏳ Coding has been my focus for:</p>
+      <div class="counter" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px"
+        fxLayoutAlign.gt-md="start center">
         <div>
-          <p class="count">{{ pad(time.years) }}</p>
+          <p class="count">{{time.years | pad}}</p>
           <p class="label">Years</p>
         </div><span>:</span>
         <div>
-          <p class="count">{{ pad(time.months) }}</p>
+          <p class="count">{{time.months | pad}}</p>
           <p class="label">Months</p>
         </div><span>:</span>
         <div>
-          <p class="count">{{ pad(time.days) }}</p>
+          <p class="count">{{time.days | pad}}</p>
           <p class="label">Days</p>
         </div><span>:</span>
         <div>
-          <p class="count">{{ pad(time.hours) }}</p>
+          <p class="count">{{time.hours | pad}}</p>
           <p class="label">Hours</p>
         </div>
       </div>
