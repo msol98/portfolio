@@ -29,7 +29,7 @@ export class WorkComponent implements OnInit {
 
     this.dialog.open(WorkDetailsComponent, {
       data: work,
-      width: '700px',
+      width: '750px',
     });
   }
 }

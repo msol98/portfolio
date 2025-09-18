@@ -82,25 +82,6 @@
   transition: 400ms;
 }
 
-.or1 {
-  animation-duration: 0.8s;
-}
-
-.or2 {
-  animation-delay: 300ms;
-  animation-duration: 0.8s;
-}
-
-.or3 {
-  animation-delay: 600ms;
-  animation-duration: 0.8s;
-}
-
-.or4 {
-  animation-delay: 900ms;
-  animation-duration: 0.8s;
-}
-
 @include media-desktop {
   .logo {
     font-size: 32px;

@@ -76,6 +76,10 @@ h5 {
   }
 }
 
+.rounded-btn {
+  max-width: 180px;
+}
+
 @include media-desktop {
   .mt {
     margin-top: -40px;

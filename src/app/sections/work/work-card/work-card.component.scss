@@ -2,10 +2,12 @@
 @import 'stylesheets/media-mixins.scss';
 
 .work-card {
+  cursor: pointer;
   border-radius: 20px;
   aspect-ratio: 1.5 / 1;
   overflow: hidden;
   position: relative;
+  transition: border-radius 100ms;
 }
 
 .bg-img {

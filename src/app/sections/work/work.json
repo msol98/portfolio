@@ -84,25 +84,6 @@
     "description": "I remotely contributed to Trustply, a startup based in Edmonton, Canada, focused on facilitating peer-to-peer exchanges for users, as well as providing a local business directory and live currency rate checking. I developed the website using JavaScript and Angular within a single-page application (SPA) architecture, ensuring smooth navigation and a seamless user experience. Later, I re-crafted the UI with HTML, CSS, and Bootstrap, designing a responsive and intuitive interface that adapts across devices while maintaining clarity and functionality.<br /><br />This project involved close collaboration with a multidisciplinary team of backend developers, designers, and QA testers to deliver a polished, high-quality product. I managed version control using Git and coordinated feature branches through GitLab, which helped maintain an organized, scalable codebase. The experience sharpened my ability to translate complex requirements into elegant, user-friendly solutions while thriving in a remote, startup environment."
   },
   {
-    "id": "stopwatch",
-    "title": "Stopwatch",
-    "type": "project",
-    "date": "June 2024",
-    "image": [
-      "/assets/images/works/stopwatch-1.JPG",
-      "/assets/images/works/stopwatch-2.JPG"
-    ],
-    "technologies": [
-      "React",
-      "Redux",
-      "JavaScript",
-      "Jest",
-      "Html",
-      "Tailwind CSS"
-    ],
-    "description": "I created a minimalistic stopwatch application using JavaScript, React.js, and TailwindCSS, designed to be lightweight, responsive, and easy to use. The interface embraces simplicity while providing accurate time tracking and a smooth user experience across devices.<br /><br />A key part of this project was implementing Redux for state management, ensuring precise handling of timer states (start, stop, reset, lap) and making the logic predictable and maintainable. This structure also makes the project easy to extend with new features in the future. The codebase is open to clone and fork, reflecting my commitment to clean, shareable, and scalable development practices."
-  },
-  {
     "id": "calculate-me",
     "title": "Calculate Me",
     "type": "project",
