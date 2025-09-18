@@ -3,6 +3,7 @@ import { WorkListItemModel, WorkType } from 'src/app/models/models';
 import works from './work.json';
 import { MatDialog } from '@angular/material/dialog';
 import { WorkDetailsComponent } from './work-details/work-details.component';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'app-work',
@@ -14,7 +15,9 @@ export class WorkComponent implements OnInit {
   jobList: WorkListItemModel[] = [];
   projectList: WorkListItemModel[] = [];
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,
+    private bottomsheet: MatBottomSheet,
+  ) { }
 
   ngOnInit() {
     this.projectList = works.filter(work => work.type == WorkType.PROJECT).map(({ id, title, image, companyName }) => ({ id, title, image: image[0], companyName }));
@@ -24,12 +27,19 @@ export class WorkComponent implements OnInit {
   openWorkDetails(workId: string) {
     if (!workId) return;
 
+    const isMobileSize = window.innerWidth < 640;
     const work = works.find(work => work.id == workId);
     if (!work) return;
 
-    this.dialog.open(WorkDetailsComponent, {
-      data: work,
-      width: '750px',
-    });
+    if (isMobileSize) {
+      this.bottomsheet.open(WorkDetailsComponent, {
+        data: work,
+      });
+    } else {
+      this.dialog.open(WorkDetailsComponent, {
+        data: work,
+        width: '750px',
+      });
+    }
   }
 }

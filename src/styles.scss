@@ -57,6 +57,15 @@ a {
   }
 }
 
+.mat-bottom-sheet-container {
+  padding: 0 !important;
+  border-radius: 16px 16px 0 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 ::selection {
   color: #000;
   background: #b39ddb86;

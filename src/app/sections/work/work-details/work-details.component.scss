@@ -1,4 +1,5 @@
 @import 'stylesheets/colors.scss';
+@import 'stylesheets/media-mixins.scss';
 
 .banner {
   width: 100%;
@@ -76,4 +77,10 @@
   max-height: 500px;
   object-fit: contain;
   text-align: center;
+}
+
+@include media-mobile-and-tablet {
+  .work-tech span {
+    font-size: 14px;
+  }
 }

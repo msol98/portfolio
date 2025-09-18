@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { WorkDetailsComponent } from './work-details/work-details.component';
 
 
@@ -23,6 +24,7 @@ import { WorkDetailsComponent } from './work-details/work-details.component';
     MatButtonModule,
     MatTabsModule,
     MatDialogModule,
+    MatBottomSheetModule
   ],
   exports: [WorkComponent]
 })
